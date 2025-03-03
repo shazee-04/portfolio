@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --welcome-msg-grad: linear-gradient(to right, #000, #000, #ff930f, #ffe600);
+    --loader-grad-1: linear-gradient(to left, #e2ff50, #f47927, #9a0d32);
+    --loader-grad-2: linear-gradient(to right,#faffdf, #cccccc);
+
+    --hero-text-grad-1: linear-gradient(to right, #000, #000, #ff930f, #ffe600);
+}
+
+::-webkit-scrollbar {
+    background-color: #111111;
+    width: 8px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+::-moz-selection {
+  background: #87cd33;
+  color: white;
+}
+
+::selection {
+  background: #87cd33;
+  color: white;
+}
+
+:-webkit-any-link {
+  color: #4e9815;
+}
+
+:-moz-any-link {
+  color: #4e9815;
+}
+
+:any-link {
+  color: #4e9815;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body {
+    background-color: #111111;
+    scroll-behavior: smooth;
+    height: max-content;
+    overflow: hidden;
+}
+
+.bottom-fade {
+    background: linear-gradient(to bottom, #ffffff00, #ffffffa8, #fffffff2, #ffffff);
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.f-paytone {
+    font-family: "Paytone One", system-ui !important;
+}
+
+.f-poppins {
+    font-family: "Poppins", system-ui !important;
+}
+
+.fs-xxxl {
+    font-size: 8rem !important;
+}
+
+.fs-xxl {
+    font-size: 7rem !important;
+}
+
+.fs-xl {
+    font-size: 6rem !important;
+}
+
+.br-12 {
+    border-radius: .75rem !important;
+}
+
+.translate-end-x {
+    transform: translateX(-100%) !important;
+}
+
+.apply-grad {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+.txt-grad-1 {
+    background: var(--loader-grad-1);
+    background-size: 150%;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: loader 3s ease-in-out;
+}
+
+.txt-grad-2 {
+    background: var(--loader-grad-2);
+    background-size: 150%;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: loader 3s ease-in-out;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+        filter: blur(0);
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.custom-nav-link .nav-link-span {
+    opacity: 0;
+    margin-right: -20px;
+    transition: opacity ease-in-out 0.2s, padding ease-in-out 0.4s, margin-right ease-in-out 0.2s;
+}
+
+.custom-nav-link:hover .nav-link-span {
+    opacity: 1;
+    margin-right: 0px;
+    padding: 0 20px 0 5px !important;
+}
+
+.custom-nav-link:active .nav-link-span {
+    padding: 0 12px 0 5px !important;
+    transition: padding ease-in-out 0.2s;
+}
+
+.custom-nav-link {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-nav-link:active {
+    background-color: #fdfdfd !important;
+}
+
+.dp {
+    z-index: 1;
+    margin: 3px;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(3px);
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn-1 {
+    0% {
+        opacity: 1;
+        scale: 1.05;
+        filter: blur(0px);
+        transform: translateY(100vh);
+    }
+
+    80% {
+        opacity: 1;
+        scale: 1.05;
+        filter: blur(0);
+        transform: translateY(30px);
+    }
+
+    90% {
+        opacity: 1;
+        scale: 1.05;
+        filter: blur(0);
+        transform: translateY(30px);
+    }
+
+    100% {
+        scale: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn-2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        filter: blur(3px);
+    }
+
+    80% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}

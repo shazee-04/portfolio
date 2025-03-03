@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 85 85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f7f7;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-327.5" y1="421.8" x2="-327.5" y2="420.26" gradientTransform="translate(8223.84 10561.05) scale(25 -25)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#327ebd"/>
+      <stop offset="1" stop-color="#1565a7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-326.97" y1="421.26" x2="-326.97" y2="419.72" gradientTransform="translate(8223.84 10561.05) scale(25 -25)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffda4b"/>
+      <stop offset="1" stop-color="#f9c600"/>
+    </linearGradient>
+  </defs>
+  <g id="Apps">
+    <g>
+      <rect class="cls-1" width="85" height="85" rx="12" ry="12"/>
+      <g>
+        <path class="cls-2" d="M37.46,16c-4.08,0-7.39,3.21-7.39,7.16v4.95h12.78v1.41h-18.47c-4.08,0-7.39,3.29-7.39,7.34v10.53c0,3.96,3.31,7.16,7.4,7.16h4.27v-6.06c0-3.96,3.31-7.16,7.4-7.16h13.62c3.45,0,6.25-2.71,6.25-6.06v-12.12c0-3.95-3.31-7.16-7.39-7.16h-11.08ZM35.78,24.8c1.41,0,2.56-1.11,2.56-2.48s-1.14-2.48-2.56-2.48-2.56,1.11-2.56,2.48,1.14,2.48,2.56,2.48Z"/>
+        <path class="cls-3" d="M48.54,68c4.08,0,7.39-3.21,7.39-7.16v-4.95h-12.78v-1.41h18.47c4.08,0,7.39-3.29,7.39-7.34v-10.53c0-3.96-3.31-7.16-7.4-7.16h-4.27v6.06c0,3.96-3.31,7.16-7.4,7.16h-13.62c-3.45,0-6.25,2.71-6.25,6.06v12.12c0,3.95,3.31,7.16,7.39,7.16h11.08ZM50.27,59.2c-1.41,0-2.56,1.11-2.56,2.48s1.14,2.48,2.56,2.48,2.56-1.11,2.56-2.48-1.14-2.48-2.56-2.48Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
