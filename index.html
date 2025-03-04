@@ -27,11 +27,13 @@
 
 <body class="body">
 
+    <!-- mouse followers -->
     <div class="mouse-follower" id="mouse-follower"></div>
     <div class="mouse-follower-2" id="mouse-follower-2"></div>
     <div class="mouse-follower-3" id="mouse-follower-3"></div>
     <div class="mouse-follower-4" id="mouse-follower-4"></div>
 
+    <!-- loader -->
     <progress max="100" value="0"></progress>
 
     <div id="smooth-wrapper">
@@ -100,14 +102,14 @@
             </div>
 
             <!-- hero section -->
-            <section class="hero-section mt-5 p-2">
+            <section class="hero-section mt-5 p-2 position-relative">
                 <!-- loader -->
-                <div class='loader d-flex align-items-center justify-content-center'>
+                <!-- <div class='loader d-flex align-items-center justify-content-center'>
                     <div class="d-flex mb-5">
                         <h1 class="fs-xxl gradient-purple apply-grad">Loading</h1>
                         <h1 class='loader--text fs-xxl txt-grad-2'>0%</h1>
                     </div>
-                </div>
+                </div> -->
                 <!-- main content -->
                 <div class='main-content' id="main-content">
                     <!-- scrolling text -->
@@ -169,6 +171,16 @@
                             </li>
                         </ul>
                     </section>
+                </div>
+                <!-- socials -->
+                <div class="socials position-fixed d-flex bg-white rounded-pill bottom-0 end-0 m-2" id="socials">
+                    <div class="d-flex">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-envelope-at"></i></a>
+                    </div>
                 </div>
             </section>
         </div>
