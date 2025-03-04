@@ -123,3 +123,15 @@ document.querySelectorAll(".navbar-brand, .dp-div, .hero-text-2").forEach((eleme
     gsap.to(".mouse-follower-3", { duration: 0.6, scale: 1 });
   });
 });
+
+
+// mouse hover - scrolling gallery --------------------------------------------------------------------------------------
+document.getElementById("socials").addEventListener("mouseenter", () => {
+  defaultScale = 1.6;
+  gsap.to(".mouse-follower-3", { duration: 0.6, scale: 1.6 });
+});
+
+document.getElementById("socials").addEventListener("mouseleave", () => {
+  defaultScale = 1;
+  gsap.to(".mouse-follower-3", { duration: 0.6, scale: 1 });
+});
