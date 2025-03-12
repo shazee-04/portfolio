@@ -14,7 +14,7 @@
 
 progress {
   position: fixed;
-  bottom: 0%;
+  top: 0%;
   left: 0%;
   -webkit-appearance: none;
   appearance: none;

@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-  --welcome-msg-grad: linear-gradient(to right, #000, #000, #ff930f, #ffe600);
-}
-
-/* -------------------------------------------------------------------------------------------------------- */
-
 .hero-section {
   overflow: hidden;
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* loader styles ------------------------------------------------------------------------------------------ */
 
 .hero-section .loader div {
   animation: loaderDiv 1s ease-in-out;
@@ -56,7 +50,7 @@
   margin-left: 1rem;
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* gallery styles ------------------------------------------------------------------------------------------ */
 
 .hero-section .scrolling-gallery li img {
   width: 100%;
@@ -75,7 +69,7 @@
   padding-right: 1rem;
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* --------------- */
 
 .hero-section .main-content {
   overflow: hidden;
@@ -104,7 +98,7 @@
   font-weight: 900;
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* --------------- */
 
 .wrapper img {
   filter: grayscale(0.);
@@ -117,9 +111,9 @@
   scale: 1.01;
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* social links bar styles 1 ------------------------------------------------------------------------------- */
 
-.hero-section .socials {
+/* .hero-section .socials {
   padding: 3px;
   opacity: 30%;
   transition: opacity 0.4s ease-in-out;
@@ -167,4 +161,38 @@
 .hero-section .socials a:active {
   margin-left: 20px;
   background-color: #00000000;
+} */
+
+/* social links bar styles 2 ------------------------------------------------------------------------------- */
+
+.hero-section .socials {
+  padding: 3px;
+  backdrop-filter: blur(15px);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 2px #00000069;
+  transition: background-color 0.8s ease-in-out;
+}
+
+.hero-section .socials:hover {
+  background-color: #ffffff;
+}
+
+.hero-section .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  padding-inline: 8px;
+  border-radius: 25px;
+  /* background-color: #ffffff10; */
+  transition: margin-inline 0.4s ease-in-out 0.1s;
+}
+
+.hero-section .socials a:hover {
+  margin-inline: 10px;
+}
+
+.hero-section .socials a i {
+  color: #313131;
+  font-size: 1.125rem;
 }
