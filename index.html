@@ -8,7 +8,7 @@
 
     <!-- hero-section css -->
     <link rel="stylesheet" href="assets/css/hero-section.css">
-    <!-- scrollprogress css -->
+    <!-- scrollprogress bar css -->
     <link rel="stylesheet" href="assets/css/scrollprogress.css">
     <!-- mousefollower css -->
     <link rel="stylesheet" href="assets/css/mousefollower.css">
@@ -36,144 +36,140 @@
     <!-- loader -->
     <progress max="100" value="0"></progress>
 
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-transparent" id="navbar">
-                <div class="container-fluid align-items-center position-relative">
-                    <div class="d-flex align-items-center">
-                        <button class="navbar-toggler d-lg-none bg-white border-0 shadow-none px-2 me-2" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
-                            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="bi bi-list"></span>
-                        </button>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent" id="navbar">
+        <div class="container-fluid align-items-center position-relative">
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler d-lg-none bg-white border-0 shadow-none px-2 me-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi bi-list"></span>
+                </button>
 
-                        <a class="navbar-brand text-white f-paytone fs-2" id="navbar-brand" href="#">Shazee.</a>
-                    </div>
-
-                    <div class="navbar-nav position-absolute translate-middle-x start-50 d-none d-md-block">
-                        <ul class="nav m-auto">
-                            <li class="nav-item">
-                                <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
-                                    href="#1" aria-current="page">
-                                    <span class="bi bi-arrow-right nav-link-span"></span>
-                                    About
-                                </a>
-                            </li>
-                            <li class="nav-item ms-3">
-                                <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
-                                    href="#2" aria-current="page">
-                                    <span class="bi bi-arrow-right nav-link-span"></span>
-                                    Projects
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="dp-div d-flex align-items-center bg-white rounded-pill justify-content-end" id="dp-div">
-                        <div class="welcome-msg text-black d-flex align-items-center f-paytone fs-5 ps-3 pe-2"
-                            id="welcome-msg">
-                            PORTFOLIO!
-                        </div>
-                        <div class="dp bg-dark rounded-circle overflow-hidden" style="aspect-ratio: 1/1; height: 32px;">
-                            <img src="assets/images/dp.jpeg" class="object-fit-cover img-fluid w-100"
-                                alt="profile picture">
-                        </div>
-                    </div>
-
-                    <!-- <span class="position-absolute bg-white start-100 translate-end-x py-3 px-4"></span> -->
-                </div>
-            </nav>
-
-            <!-- navbar collaps - sm -->
-            <div class="collapse bg-white" id="collapsibleNavId">
-                <div class="p-2">
-                    <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
-                        href="#1" aria-current="page">
-                        <span class="bi bi-arrow-right nav-link-span"></span>
-                        About
-                    </a>
-                    <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
-                        href="#2" aria-current="page">
-                        <span class="bi bi-arrow-right nav-link-span"></span>
-                        Projects
-                    </a>
-                </div>
+                <a class="navbar-brand text-white f-paytone fs-2" id="navbar-brand" href="#">Shazee.</a>
             </div>
 
-            <!-- hero section -->
-            <section class="hero-section mt-5 p-2 position-relative">
-                <!-- loader -->
-                <!-- <div class='loader d-flex align-items-center justify-content-center'>
-                    <div class="d-flex mb-5">
-                        <h1 class="fs-xxl gradient-purple apply-grad">Loading</h1>
-                        <h1 class='loader--text fs-xxl txt-grad-2'>0%</h1>
-                    </div>
-                </div> -->
-                <!-- main content -->
-                <div class='main-content' id="main-content">
-                    <!-- scrolling text -->
-                    <section class='scrolling-text' id="scrolling-text-1">
-                        <div class='wrapper text text-white'>
-                            DEVELOPER.<span class="gradient-purple apply-grad">DEVELOPER.</span>DEVOLOPER.
-                        </div>
-                    </section>
-                    <section class='scrolling-text' id="scrolling-text-2">
-                        <div class='wrapper text text-white'>
-                            <span class="gradient-red apply-grad">DESIGNER.</span>DESIGNER.DESIGNER.
-                        </div>
-                    </section>
-                    <!-- gallery -->
-                    <section class='scrolling-gallery' id="scrolling-gallery-1">
-                        <ul class='wrapper'>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class='scrolling-gallery' id="scrolling-gallery-2">
-                        <ul class='wrapper'>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                            <li>
-                                <img src='assets/images/test.jpeg'>
-                            </li>
-                        </ul>
-                    </section>
+            <div class="navbar-nav position-absolute translate-middle-x start-50 d-none d-md-block">
+                <ul class="nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
+                            href="#1" aria-current="page">
+                            <span class="bi bi-arrow-right nav-link-span"></span>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
+                            href="#2" aria-current="page">
+                            <span class="bi bi-arrow-right nav-link-span"></span>
+                            Projects
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dp-div d-flex align-items-center bg-white rounded-pill justify-content-end" id="dp-div">
+                <div class="welcome-msg text-black d-flex align-items-center f-paytone fs-5 ps-3 pe-2" id="welcome-msg">
+                    PORTFOLIO!
                 </div>
-                <!-- socials 1 -->
-                <!-- <div class="socials position-fixed d-flex bg-white rounded-pill bottom-0 end-0 m-2" id="socials">
+                <div class="dp bg-dark rounded-circle overflow-hidden" style="aspect-ratio: 1/1; height: 32px;">
+                    <img src="assets/images/dp.jpeg" class="object-fit-cover img-fluid w-100" alt="profile picture">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar sm -->
+    <div class="collapse bg-white" id="collapsibleNavId">
+        <div class="p-2">
+            <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
+                href="#1" aria-current="page">
+                <span class="bi bi-arrow-right nav-link-span"></span>
+                About
+            </a>
+            <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
+                href="#2" aria-current="page">
+                <span class="bi bi-arrow-right nav-link-span"></span>
+                Projects
+            </a>
+        </div>
+    </div>
+
+    <!-- hero section -->
+    <section class="hero-section mt-4 p-2 position-relative">
+        <!-- loader -->
+        <div class='loader d-flex align-items-center justify-content-center'>
+            <div class="d-flex mb-5">
+                <h1 class="fs-xxl gradient-purple apply-grad">Loading</h1>
+                <h1 class='loader--text fs-xxl txt-grad-2'>0%</h1>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class='main-content' id="main-content">
+            <!-- scrolling text -->
+            <section class='scrolling-text' id="scrolling-text-1">
+                <div class='wrapper text text-white'>
+                    DEVELOPER.<span class="gradient-purple apply-grad">DEVELOPER.</span>DEVOLOPER.DEVOLOPER.
+                </div>
+            </section>
+            <section class='scrolling-text' id="scrolling-text-2">
+                <div class='wrapper text text-white'>
+                    <span class="gradient-red apply-grad">DESIGNER.</span>DESIGNER.
+                </div>
+            </section>
+            <!-- gallery -->
+            <section class='scrolling-gallery' id="scrolling-gallery-1">
+                <ul class='wrapper'>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                </ul>
+            </section>
+            <section class='scrolling-gallery' id="scrolling-gallery-2">
+                <ul class='wrapper'>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                    <li>
+                        <img src='assets/images/test.jpeg'>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- social links bar 1 -->
+        <!-- <div class="socials position-fixed d-flex bg-white rounded-pill bottom-0 end-0 m-2" id="socials">
                     <div class="d-flex">
                         <a href="#"><i class="bi bi-at"></i></a>
                         <a href="#"><i class="bi bi-github"></i></a>
@@ -182,24 +178,28 @@
                         <a href="#"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div> -->
-                <!-- socials 2 -->
-                <div class="socials position-fixed d-flex rounded-pill translate-middle-x bottom-0 start-50 m-2" id="socials">
-                    <div class="d-flex">
-                        <a href="#"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-google"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div>
-            </section>
+
+        <!-- socials links bar 2 -->
+        <div class="socials position-fixed d-flex rounded-pill translate-middle-x bottom-0 start-50 m-2" id="socials">
+            <div class="d-flex">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-google"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- second section -->
+    <section>
+        <div class="vh-100 vw-100 bg-white"></div>
+    </section>
 
 
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.bundle.js"></script>
-    <!-- gsap -->
+    <!-- gsap latest -->
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
     <!-- scrolltrigger -->
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
