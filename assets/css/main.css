@@ -19,32 +19,32 @@
 }
 
 ::-moz-selection {
-    background: #87cd33;
+    background: #8cff00;
     color: white;
 }
 
 ::selection {
-    background: #87cd33;
+    background: #8cff00;
     color: white;
 }
 
 :-webkit-any-link {
-    color: #4e9815;
+    color: #79dc00;
 }
 
 :-moz-any-link {
-    color: #4e9815;
+    color: #79dc00;
 }
 
 :any-link {
-    color: #4e9815;
+    color: #79dc00;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: default;
+    cursor: url(../icons/cursor/cursor.png), auto;
 }
 
 body {
