@@ -96,12 +96,12 @@
     </div>
 
     <!-- hero section -->
-    <section class="hero-section mt-4 p-2 position-relative">
+    <section class="hero-section mt-5 pt-4 p-2 position-relative">
         <!-- loader -->
         <div class='loader d-flex align-items-center justify-content-center'>
             <div class="d-flex mb-5">
                 <h1 class="fs-xxl gradient-purple apply-grad">Loading</h1>
-                <h1 class='loader--text fs-xxl txt-grad-2'>0%</h1>
+                <h1 class='loader-progress fs-xxl txt-grad-2'>0%</h1>
             </div>
         </div>
 
@@ -166,21 +166,21 @@
                     </li>
                 </ul>
             </section>
+            <!-- scrolling text -->
+            <section class='scrolling-text' id="scrolling-text-3">
+                <div class='wrapper text text-white'>
+                    DESIGNER.<span class="gradient-red apply-grad">DESIGNER.</span>DESIGNER.
+                </div>
+            </section>
+            <section class='scrolling-text' id="scrolling-text-4">
+                <div class='wrapper text text-white'>
+                    DEVOLOPER.<span class="gradient-purple apply-grad">DEVELOPER.</span>DEVELOPER.
+                </div>
+            </section>
         </div>
 
-        <!-- social links bar 1 -->
-        <!-- <div class="socials position-fixed d-flex bg-white rounded-pill bottom-0 end-0 m-2" id="socials">
-                    <div class="d-flex">
-                        <a href="#"><i class="bi bi-at"></i></a>
-                        <a href="#"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div> -->
-
-        <!-- socials links bar 2 -->
-        <div class="socials position-fixed d-flex rounded-pill translate-middle-x bottom-0 start-50 m-2" id="socials">
+        <!-- socials links bar -->
+        <div class="socials position-fixed d-flex rounded-pill translate-middle-x bottom-0 start-50 m-2" id="social-links-bar">
             <div class="d-flex">
                 <a href="#"><i class="bi bi-github"></i></a>
                 <a href="#"><i class="bi bi-google"></i></a>
@@ -192,8 +192,10 @@
     </section>
 
     <!-- second section -->
-    <section>
-        <div class="vh-100 vw-100 bg-white"></div>
+    <section class="section-2">
+        <div class="vh-100 vw-100 d-flex p-5">
+            <div class="draggable p-5 box pink "></div>
+        </div>
     </section>
 
 
@@ -203,6 +205,8 @@
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
     <!-- scrolltrigger -->
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+    <!-- draggable -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
     <!-- scroll smoother -->
     <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script>
     <!-- lenis initial setup -->

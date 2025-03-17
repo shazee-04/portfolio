@@ -13,21 +13,19 @@
 @keyframes loaderDiv {
   from {
     opacity: 0;
-    /* scale: 0.98; */
     transform: translateY(50px);
     filter: blur(3px);
   }
 
   to {
     opacity: 1;
-    /* scale: 1; */
     transform: translateY(0);
     filter: blur(0);
   }
 }
 
-.loader,
-.loader div {
+.hero-section .loader,
+.hero-section .loader div {
   overflow: hidden;
 }
 
@@ -45,12 +43,12 @@
   transition-delay: 1s;
 }
 
-.hero-section .loader--text {
+.hero-section .loader-progress {
   font-family: "Paytone One", system-ui !important;
   margin-left: 1rem;
 }
 
-/* gallery styles ------------------------------------------------------------------------------------------ */
+/* main content styles ------------------------------------------------------------------------------------------ */
 
 .hero-section .scrolling-gallery li img {
   width: 100%;
@@ -79,20 +77,16 @@
   display: flex;
 }
 
-/* .hero-section .hero-text {
-  color: #121212;
-  transition: color 1s ease-in-out;
-}
-
-.hero-section .hero-text:hover {
-  color: #333;
+/* .hero-section .scrolling-gallery:not(.last) {
+  padding-bottom: 1rem;
 } */
 
-.hero-section .scrolling-gallery:not(.last) {
-  padding-bottom: 1rem;
+.hero-section .scrolling-text {
+  margin-top: -2rem;
 }
 
 .hero-section .scrolling-text .text {
+  font-family: 'Paytone One', system-ui !important;
   font-size: clamp(8rem, 14vw, 16rem);
   line-height: 1;
   font-weight: 900;
@@ -100,70 +94,18 @@
 
 /* --------------- */
 
-.wrapper img {
-  filter: grayscale(0.);
+.hero-section .wrapper img {
+  filter: grayscale(0);
   border-radius: 25px;
   transition: filter 0.4s ease-in-out, scale 0.4s ease-in-out;
 }
 
-.wrapper img:hover {
+.hero-section .wrapper img:hover {
   filter: grayscale(0.75);
   scale: 1.01;
 }
 
-/* social links bar styles 1 ------------------------------------------------------------------------------- */
-
-/* .hero-section .socials {
-  padding: 3px;
-  opacity: 30%;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.hero-section .socials div {
-  gap: 3px;
-  margin-right: -170px;
-  transition: margin-right 0.8s ease-in-out 0.4s;
-}
-
-.hero-section .socials a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1/1;
-  padding-inline: 10px;
-  border-radius: 25px;
-  background-color: #00000010;
-}
-
-.hero-section .socials a i {
-  color: #111111;
-  font-size: 19.5px;
-}
-
-.hero-section .socials:hover {
-  opacity: 100%;
-}
-
-.hero-section .socials div:hover {
-  margin-right: 0px;
-}
-
-.hero-section .socials div:hover a {
-  transition: margin-left 0.4s ease-in-out, background-color 0.4s ease-in-out;
-}
-
-.hero-section .socials a:hover {
-  margin-left: 10px;
-  background-color: #00000030;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.hero-section .socials a:active {
-  margin-left: 20px;
-  background-color: #00000000;
-} */
-
-/* social links bar styles 2 ------------------------------------------------------------------------------- */
+/* social links bar styles ------------------------------------------------------------------------------- */
 
 .hero-section .socials {
   padding: 3px;
@@ -184,7 +126,6 @@
   aspect-ratio: 1/1;
   padding-inline: 8px;
   border-radius: 25px;
-  /* background-color: #ffffff10; */
   transition: margin-inline 0.4s ease-in-out 0.1s;
 }
 
