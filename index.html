@@ -8,6 +8,8 @@
 
     <!-- hero-section css -->
     <link rel="stylesheet" href="assets/css/hero-section.css">
+    <!-- 2-section css -->
+    <link rel="stylesheet" href="assets/css/showcase-section.css">
     <!-- scrollprogress bar css -->
     <link rel="stylesheet" href="assets/css/scrollprogress.css">
     <!-- mousefollower css -->
@@ -25,7 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="body">
+<body>
 
     <!-- mouse followers -->
     <div class="mouse-follower" id="mouse-follower"></div>
@@ -35,6 +37,8 @@
 
     <!-- loader -->
     <progress max="100" value="0"></progress>
+
+    <div class="test position-absolute position-fixed z-3 top-0 end-0 p-2 bg-white" id="test">0</div>
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-transparent" id="navbar">
@@ -96,7 +100,7 @@
     </div>
 
     <!-- hero section -->
-    <section class="hero-section mt-5 pt-4 p-2 position-relative">
+    <section class="hero-section mt-5 pt-4 p-2 position-relative" id="hero-section">
         <!-- loader -->
         <div class='loader d-flex align-items-center justify-content-center'>
             <div class="d-flex mb-5">
@@ -180,7 +184,8 @@
         </div>
 
         <!-- socials links bar -->
-        <div class="socials position-fixed d-flex rounded-pill translate-middle-x bottom-0 start-50 m-2" id="social-links-bar">
+        <div class="socials position-fixed d-flex rounded-pill translate-middle-x bottom-0 start-50 m-2"
+            id="social-links-bar">
             <div class="d-flex">
                 <a href="#"><i class="bi bi-github"></i></a>
                 <a href="#"><i class="bi bi-google"></i></a>
@@ -192,9 +197,58 @@
     </section>
 
     <!-- second section -->
-    <section class="section-2">
-        <div class="vh-100 vw-100 d-flex p-5">
-            <div class="draggable p-5 box pink "></div>
+    <section class="showcase-section">
+        <div class="showcase-container" id="showcase-container">
+            <div class="grid-container" id="grid-container">
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+                <!-- item -->
+                <div class="boxed">
+                    <div class="boxed-content gradient-blue"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -228,6 +282,8 @@
 
     <!-- hero section -->
     <script src="assets/js/hero-section.js"></script>
+    <!-- 2 section -->
+    <script src="assets/js/showcase-section.js"></script>
 
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
