@@ -7,8 +7,12 @@ const updateProgress = (instance) =>
 
 const main = () => {
   document.body.style.overflow = 'auto';
-  document.scrollingElement.scrollTo(0, 0);
-  gsap.to(document.querySelector('.hero-section .loader'), { autoAlpha: 0 });
+  // document.scrollingElement.scrollTo(0, 0);
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 500);
+
+  gsap.to(document.querySelector('.hero-section .loader'), { autoAlpha: 0, duration: 0.5 });
 
   gsap.utils.toArray('.hero-section section').forEach((section, index) => {
     const w = section.querySelector('.hero-section .wrapper');
@@ -17,7 +21,10 @@ const main = () => {
       x: xEnd,
       scrollTrigger: {
         trigger: section,
-        scrub: 0.5
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 0.5,
+        markers: false
       }
     });
   });
