@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.hero-section {
-  overflow: hidden;
-}
-
 /* loader styles ------------------------------------------------------------------------------------------ */
 
 .hero-section .loader div {
@@ -77,13 +73,13 @@
   display: flex;
 }
 
-/* .hero-section .scrolling-gallery:not(.last) {
-  padding-bottom: 1rem;
-} */
-
 .hero-section .scrolling-text {
   margin-top: -2rem;
 }
+
+/* .hero-section .scrolling-text-2 {
+  pointer-events: none;
+} */
 
 .hero-section .scrolling-text .text {
   font-family: 'Paytone One', system-ui !important;
@@ -103,6 +99,64 @@
 .hero-section .wrapper img:hover {
   filter: grayscale(0.75);
   scale: 1.01;
+}
+
+/* parallax styles ---------------------------------------------------------------------------------------- */
+.parallax {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  position: absolute;
+  pointer-events: none;
+  /* z-index: 1; */
+}
+
+.parallax-1 {
+  top: 0;
+}
+
+.parallax-1 .flair-cus {
+  margin: 25px 0 -25px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.parallax-1 .item-1 {
+  top: 0;
+  left: 6%;
+  width: 140px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-2 {
+  top: 15%;
+  right: 12%;
+  width: 85px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-3 {
+  bottom: 12%;
+  left: 23%;
+  width: 100px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-4 {
+  bottom: 25%;
+  right: 34%;
+  width: 170px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-1,
+.parallax-1 .item-4 {
+  z-index: 1;
 }
 
 /* social links bar styles ------------------------------------------------------------------------------- */

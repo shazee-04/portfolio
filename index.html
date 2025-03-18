@@ -30,15 +30,14 @@
 <body>
 
     <!-- mouse followers -->
-    <div class="mouse-follower" id="mouse-follower"></div>
-    <div class="mouse-follower-2" id="mouse-follower-2"></div>
-    <div class="mouse-follower-3" id="mouse-follower-3"></div>
-    <div class="mouse-follower-4" id="mouse-follower-4"></div>
+    <!-- <div class="mouse-follower-1" id="mouse-follower-1"></div> -->
+    <!-- <div class="mouse-follower-2" id="mouse-follower-2"></div> -->
+    <!-- <div class="mouse-follower-3" id="mouse-follower-3"></div> -->
+    <!-- <div class="mouse-follower-4" id="mouse-follower-4"></div> -->
+    <div class="mouse-follower-sp" id="mouse-follower-sp">explore</div>
 
     <!-- loader -->
     <progress max="100" value="0"></progress>
-
-    <div class="test position-absolute position-fixed z-3 top-0 end-0 p-2 bg-white" id="test">0</div>
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-transparent" id="navbar">
@@ -57,14 +56,14 @@
                 <ul class="nav m-auto">
                     <li class="nav-item">
                         <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
-                            href="#1" aria-current="page">
+                            id="navbar-btn-1" href="#1" aria-current="page">
                             <span class="bi bi-arrow-right nav-link-span"></span>
                             About
                         </a>
                     </li>
                     <li class="nav-item ms-3">
                         <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
-                            href="#2" aria-current="page">
+                            id="navbar-btn-2" href="#2" aria-current="page">
                             <span class="bi bi-arrow-right nav-link-span"></span>
                             Projects
                         </a>
@@ -102,101 +101,117 @@
     <!-- hero section -->
     <section class="hero-section mt-5 pt-4 p-2 position-relative" id="hero-section">
         <!-- loader -->
-        <div class='loader d-flex align-items-center justify-content-center'>
+        <div class="loader d-flex align-items-center justify-content-center" id="loader-div">
             <div class="d-flex mb-5">
                 <h1 class="fs-xxl gradient-purple apply-grad">Loading</h1>
-                <h1 class='loader-progress fs-xxl txt-grad-2'>0%</h1>
+                <h1 class="loader-progress fs-xxl txt-grad-2">0%</h1>
             </div>
         </div>
 
+        <!-- parallax effects -->
+        <div class="parallax parallax-1" id="parallax-1">
+            <div class="item-1 flair-cus flair--2"></div>
+            <div class="item-2 flair-cus flair--2"></div>
+            <div class="item-3 flair-cus flair--2"></div>
+            <div class="item-4 flair-cus flair--2"></div>
+        </div>
+
         <!-- main content -->
-        <div class='main-content' id="main-content">
-            <!-- scrolling text -->
-            <section class='scrolling-text' id="scrolling-text-1">
-                <div class='wrapper text text-white'>
-                    DEVELOPER.<span class="gradient-purple apply-grad">DEVELOPER.</span>DEVOLOPER.DEVOLOPER.
-                </div>
-            </section>
-            <section class='scrolling-text' id="scrolling-text-2">
-                <div class='wrapper text text-white'>
-                    <span class="gradient-red apply-grad">DESIGNER.</span>DESIGNER.
-                </div>
-            </section>
-            <!-- gallery -->
-            <section class='scrolling-gallery' id="scrolling-gallery-1">
-                <ul class='wrapper'>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                </ul>
-            </section>
-            <section class='scrolling-gallery' id="scrolling-gallery-2">
-                <ul class='wrapper'>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                    <li>
-                        <img src='assets/images/test.jpeg'>
-                    </li>
-                </ul>
-            </section>
-            <!-- scrolling text -->
-            <section class='scrolling-text' id="scrolling-text-3">
-                <div class='wrapper text text-white'>
-                    DESIGNER.<span class="gradient-red apply-grad">DESIGNER.</span>DESIGNER.
-                </div>
-            </section>
-            <section class='scrolling-text' id="scrolling-text-4">
-                <div class='wrapper text text-white'>
-                    DEVOLOPER.<span class="gradient-purple apply-grad">DEVELOPER.</span>DEVELOPER.
-                </div>
-            </section>
+        <div class="main-content position-relative" id="main-content">
+            <div class="scrolling-text-container-1" id="scrolling-text-container-1">
+                <!-- scrolling text -->
+                <section class="scrolling-text scrolling-text-1" id="scrolling-text-1">
+                    <div class="wrapper text text-white">
+                        DEVELOPER.<span class="gradient-purple apply-grad">DEVELOPER.</span>DEVOLOPER.DEVOLOPER.
+                    </div>
+                </section>
+                <!-- scrolling text -->
+                <section class="scrolling-text scrolling-text-2" id="scrolling-text-2">
+                    <div class="wrapper text text-white">
+                        <span class="gradient-red apply-grad">DESIGNER.</span>DESIGNER.
+                    </div>
+                </section>
+            </div>
+            <div class="scrolling-gallery-container" id="scrolling-gallery-container">
+                <!-- gallery -->
+                <section class="scrolling-gallery" id="scrolling-gallery-1">
+                    <ul class="wrapper">
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                    </ul>
+                </section>
+                <section class="scrolling-gallery" id="scrolling-gallery-2">
+                    <ul class="wrapper">
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                        <li>
+                            <img src="assets/images/test.jpeg">
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="scrolling-text-container-2" id="scrolling-text-container-2">
+                <!-- scrolling text -->
+                <section class="scrolling-text scrolling-text-3" id="scrolling-text-3">
+                    <div class="wrapper text text-white">
+                        DESIGNER.<span class="gradient-red apply-grad">DESIGNER.</span>DESIGNER.
+                    </div>
+                </section>
+                <!-- scrolling text -->
+                <section class="scrolling-text scrolling-text-4" id="scrolling-text-4">
+                    <div class="wrapper text text-white">
+                        DEVOLOPER.<span class="gradient-purple apply-grad">DEVELOPER.</span>DEVELOPER.
+                    </div>
+                </section>
+            </div>
         </div>
 
         <!-- socials links bar -->
         <div class="socials position-fixed d-flex rounded-pill translate-middle-x bottom-0 start-50 m-2"
             id="social-links-bar">
             <div class="d-flex">
-                <a href="#"><i class="bi bi-github"></i></a>
-                <a href="#"><i class="bi bi-google"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#" id="github"><i class="bi bi-github"></i></a>
+                <a href="#" id="email"><i class="bi bi-google"></i></a>
+                <a href="#" id="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="#" id="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" id="facebook"><i class="bi bi-facebook"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- second section -->
+    <!-- showcase section -->
     <section class="showcase-section">
         <div class="showcase-container" id="showcase-container">
             <div class="grid-container" id="grid-container">
@@ -256,9 +271,9 @@
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.bundle.js"></script>
     <!-- gsap latest -->
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <!-- scrolltrigger -->
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <!-- draggable -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
     <!-- scroll smoother -->
@@ -276,7 +291,7 @@
 
         requestAnimationFrame(raf);
     </script>
-    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <!-- mousefollower js -->
     <script src="assets/js/mousefollower.js"></script>
 
