@@ -6,8 +6,3 @@ gsap.to('progress', {
   ease: 'none',
   scrollTrigger: { scrub: 0.5 }
 });
-
-//test
-window.addEventListener('scroll', () => {
-  document.getElementById('test').innerHTML = Math.floor(window.scrollY);
-});
