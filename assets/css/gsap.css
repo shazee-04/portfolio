@@ -351,6 +351,10 @@
     background-image: url("https://assets.codepen.io/16327/flair-35.png");
 }
 
+.flair--36 {
+    background-image: url("https://assets.codepen.io/16327/flair-36.png");
+}
+
 .flair-cont {
     display: flex;
     align-items: center;
