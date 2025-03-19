@@ -3,7 +3,7 @@
   --border-color: #fff;
   --text-color: #fff;
   --bg-color: #000;
-  --z-index: 99999;
+  --z-max: 100000;
 
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
   background: var(--bg-color);
   will-change: transform;
   pointer-events: none;
-  z-index: var(--z-index);
+  z-index: var(--z-max);
 }
 
 /* custom default cursor */
