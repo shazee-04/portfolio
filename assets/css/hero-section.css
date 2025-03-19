@@ -120,6 +120,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   will-change: transform;
+  filter: saturate(1.5);
 }
 
 .parallax-1 .item-1 {
@@ -156,6 +157,57 @@
 
 .parallax-1 .item-1,
 .parallax-1 .item-4 {
+  z-index: 1;
+}
+
+/* -------------------- */
+
+.parallax-2 {
+  bottom: 0;
+}
+
+.parallax-2 .flair-cus {
+  margin: 25px 0 -25px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+  filter: saturate(1.5);
+}
+
+.parallax-2 .item-1 {
+  top: 0;
+  left: 6%;
+  width: 140px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-2 {
+  top: 15%;
+  right: 12%;
+  width: 85px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-3 {
+  bottom: 12%;
+  left: 23%;
+  width: 100px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-4 {
+  bottom: 25%;
+  right: 34%;
+  width: 170px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-1,
+.parallax-2 .item-4 {
   z-index: 1;
 }
 

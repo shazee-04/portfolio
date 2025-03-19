@@ -11,8 +11,8 @@ let xTo = gsap.quickTo(".mouse-follower-sp", "x", { duration: 0.1, ease: "power3
 // xTo = gsap.quickTo(".mouse-follower-1", "x", { duration: 0.2, ease: "power3" }),
 //   yTo = gsap.quickTo(".mouse-follower-1", "y", { duration: 0.2, ease: "power3" });
 
-let parallax_xTo = gsap.quickTo(".parallax-1 div", "x", { duration: 0.6, ease: "power3" }),
-  parallax_yTo = gsap.quickTo(".parallax-1 div", "y", { duration: 0.6, ease: "power3" });
+let parallax_xTo = gsap.quickTo(".parallax-1 div, .parallax-2 div", "x", { duration: 0.6, ease: "power3" }),
+  parallax_yTo = gsap.quickTo(".parallax-1 div, .parallax-2 div", "y", { duration: 0.6, ease: "power3" });
 
 window.addEventListener("mousemove", (e) => {
   let xChange = window.innerWidth / 2 - e.clientX;
@@ -114,13 +114,22 @@ document.getElementById("scrolling-text-4").addEventListener("mouseleave", () =>
 
 
 
-// mouse hover - scrolling text container ------------------------------------------------------------------------------
+// mouse hover - scrolling text container 1 ----------------------------------------------------------------------------
 document.getElementById("scrolling-text-container-1").addEventListener("mouseenter", () => {
-  gsap.to(".parallax-1 div", { scale: 1.2, filter: "grayscale(0.5)", duration: 0.6, ease: "power3" });
+  gsap.to(".parallax-1 div", { scale: 1.2, filter: "saturate(3)", duration: 1, ease: "power3" });
 });
 
 document.getElementById("scrolling-text-container-1").addEventListener("mouseleave", () => {
-  gsap.to(".parallax-1 div", { scale: 1, filter: "grayscale(0)", duration: 0.6, ease: "power3" });
+  gsap.to(".parallax-1 div", { scale: 1, filter: "saturate(2)", duration: 1, ease: "power3" });
+});
+
+// mouse hover - scrolling text container 2 ----------------------------------------------------------------------------
+document.getElementById("scrolling-text-container-2").addEventListener("mouseenter", () => {
+  gsap.to(".parallax-2 div", { scale: 1.2, filter: "saturate(2)", duration: 1, ease: "power3" });
+});
+
+document.getElementById("scrolling-text-container-2").addEventListener("mouseleave", () => {
+  gsap.to(".parallax-2 div", { scale: 1, filter: "saturate(1.5)", duration: 1, ease: "power3" });
 });
 
 
