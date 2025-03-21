@@ -64,7 +64,7 @@ document.getElementById("navbar-btn-1").addEventListener("mouseenter", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_about });
 });
 
-document.getElementById("navbar-btn-1").addEventListener("mouseleave", () => {
+document.getElementById("navbar-btn-div").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
@@ -73,7 +73,7 @@ document.getElementById("navbar-btn-2").addEventListener("mouseenter", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_projects });
 });
 
-document.getElementById("navbar-btn-2").addEventListener("mouseleave", () => {
+document.getElementById("navbar-btn-div").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
@@ -119,6 +119,51 @@ document.getElementById("scrolling-text-4").addEventListener("mouseenter", () =>
 });
 
 document.getElementById("scrolling-text-4").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - github ------------------------------------------------------------------------------------------
+document.getElementById("github").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: "github" });
+});
+
+document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - email ------------------------------------------------------------------------------------------
+document.getElementById("email").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: "email" });
+});
+
+document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - linkedin ------------------------------------------------------------------------------------------
+document.getElementById("linkedin").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: "linkedin" });
+});
+
+document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - instagram ------------------------------------------------------------------------------------------
+document.getElementById("instagram").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: "instagram" });
+});
+
+document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - facebook ------------------------------------------------------------------------------------------
+document.getElementById("facebook").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: "facebook" });
+});
+
+document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
