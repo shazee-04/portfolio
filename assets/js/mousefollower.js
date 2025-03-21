@@ -1,4 +1,4 @@
-gsap.set(".mouse-follower-sp", { marginLeft: 11, marginTop: 22, textContent: "explore" });
+gsap.set(".mouse-follower-sp", { marginLeft: 11, marginTop: 22, textContent: "loading" });
 
 // gsap.set(".mouse-follower-1, .mouse-follower-2, .mouse-follower-3, .mouse-follower-4", { xPercent: -50, yPercent: -50 });
 
@@ -28,6 +28,7 @@ window.addEventListener("mousemove", (e) => {
 });
 
 // special mouse follower settings -------------------------------------------------------------------------------------
+let h_loading = "loading";
 let h_default = "explore";
 let h_name = "shazee sandaruwan";
 let h_about = "get to know me";
@@ -39,6 +40,15 @@ let h_gallery = "explore";
 let h_title_3 = "obviously";
 let h_title_4 = "a good one";
 let h_delay = 0.1;
+
+// mouse hover - loader -------------------------------------------------------------------------------------
+// document.getElementById("loader-div").addEventListener("mouseenter", () => {
+//   gsap.to(".mouse-follower-sp", { textContent: h_loading });
+// });
+
+// document.getElementById("loader-div").addEventListener("mouseleave", () => {
+//   gsap.to(".mouse-follower-sp", { textContent: h_default });
+// });
 
 // mouse hover - nvabar brand name -------------------------------------------------------------------------------------
 document.getElementById("navbar-brand").addEventListener("mouseenter", () => {
