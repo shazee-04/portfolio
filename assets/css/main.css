@@ -147,6 +147,90 @@ body {
     }
 }
 
+:root {
+    --social-icon-size: 16px;
+    --social-icon-filter: invert(0);
+}
+
+/* social links bar styles ------------------------------------------------------------------------------- */
+
+.hero-section .socials {
+    padding: 3px;
+    backdrop-filter: blur(15px);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px 2px #00000020;
+    transition: background-color 0.8s ease-in-out;
+}
+
+.hero-section .socials:hover {
+    background-color: #ffffff;
+}
+
+.hero-section .socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    padding-inline: 8px;
+    border-radius: 25px;
+    transition: margin-inline 0.4s ease-in-out 0.1s;
+}
+
+.hero-section .socials a i {
+    color: #313131;
+    font-size: 1.125rem;
+}
+
+.hero-section .socials div a {
+    margin-inline: 2px;
+    border: solid 1px #111111;
+    /* background-color: #11111125; */
+}
+
+.hero-section .socials div a:hover {
+    margin-inline: 10px;
+}
+
+.i-github {
+    background: url(../icons/social-icons/github.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+    filter: var(--social-icon-filter);
+}
+
+.i-google {
+    background: url(../icons/social-icons/mail.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+    filter: var(--social-icon-filter);
+}
+
+.i-linkedin {
+    background: url(../icons/social-icons/linkedin.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+    filter: var(--social-icon-filter);
+}
+
+.i-instagram {
+    background: url(../icons/social-icons/instagram.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+    filter: var(--social-icon-filter);
+}
+
+.i-facebook {
+    background: url(../icons/social-icons/facebook.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+    filter: var(--social-icon-filter);
+}
+
 /* custom nav-link styles ------------------------------------------------------------------------------------- */
 
 .custom-nav-link .nav-link-span {
