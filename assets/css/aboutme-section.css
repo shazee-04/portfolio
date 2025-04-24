@@ -1,0 +1,19 @@
+.aboutme-section {
+    width: 100%;
+    height: 85vh;
+}
+
+.aboutme-section .model-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    border-radius: 12px;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
