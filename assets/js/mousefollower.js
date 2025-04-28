@@ -122,12 +122,23 @@ document.getElementById("scrolling-text-4").addEventListener("mouseleave", () =>
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
+
+
+// mouse hover - socials-bar ------------------------------------------------------------------------------------------
+// document.getElementById("socials-bar").addEventListener("mouseenter", () => {
+//   gsap.to(".mouse-follower-sp", { textContent: "social-links" });
+// });
+
+// document.getElementById("socials-bar").addEventListener("mouseleave", () => {
+//   gsap.to(".mouse-follower-sp", { textContent: h_default });
+// });
+
 // mouse hover - github ------------------------------------------------------------------------------------------
 document.getElementById("github").addEventListener("mouseenter", () => {
   gsap.to(".mouse-follower-sp", { textContent: "github" });
 });
 
-document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+document.getElementById("socials-bar").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
@@ -136,7 +147,7 @@ document.getElementById("email").addEventListener("mouseenter", () => {
   gsap.to(".mouse-follower-sp", { textContent: "email" });
 });
 
-document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+document.getElementById("socials-bar").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
@@ -145,7 +156,7 @@ document.getElementById("linkedin").addEventListener("mouseenter", () => {
   gsap.to(".mouse-follower-sp", { textContent: "linkedin" });
 });
 
-document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+document.getElementById("socials-bar").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
@@ -154,7 +165,7 @@ document.getElementById("instagram").addEventListener("mouseenter", () => {
   gsap.to(".mouse-follower-sp", { textContent: "instagram" });
 });
 
-document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+document.getElementById("socials-bar").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
@@ -163,7 +174,7 @@ document.getElementById("facebook").addEventListener("mouseenter", () => {
   gsap.to(".mouse-follower-sp", { textContent: "facebook" });
 });
 
-document.getElementById("social-links-bar").addEventListener("mouseleave", () => {
+document.getElementById("socials-bar").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
 });
 
