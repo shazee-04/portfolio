@@ -6,18 +6,6 @@
   position: relative;
 }
 
-model-viewer {
-  height: 100%;
-  width: 100%;
-  /* scale: 1.5; */
-  position: absolute;
-  top: 20%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  background-color: aliceblue;
-}
-
 .flowing-menu-wrap {
   width: 100%;
   height: 100%;
