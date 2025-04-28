@@ -101,7 +101,7 @@
     <!-- hero section -->
     <section class="hero-section mt-5 pt-4 p-2 position-relative" id="hero-section">
         <!-- loader -->
-        <div class="loader d-flex align-items-center justify-content-center z-max-0" id="loader-div">
+        <div class="loader d-flex align-items-center justify-content-center z-max-0 opacity-0" id="loader-div">
             <div class="d-flex mb-5">
                 <h1 class="fs-xxl gradient-purple apply-grad">Loading</h1>
                 <h1 class="loader-progress fs-xxl txt-grad-2">0%</h1>
@@ -220,9 +220,16 @@
 
     <!-- aboutme section -->
     <section class="aboutme-section">
-        <!-- <div class="model-container">
-            <model-viewer src="assets/3d/aboutme-model.glb" id="lanyard-model" alt="Lanyard 3D model" autoplay auto-rotate disable-zoom></model-viewer>
-        </div> -->
+        <!-- <model-viewer src="assets/3d/dancing-model-1.glb" id="lanyard-model" alt="Lanyard 3D model" autoplay auto-rotate
+            disable-zoom camera-orbit="45deg 60deg 4m">
+        </model-viewer> -->
+
+        <div class="flowing-menu-wrap px-2">
+            <div class="flowing-menu" id="flowing-menu">
+                <!-- Items injected via JS -->
+            </div>
+        </div>
+
     </section>
 
 
