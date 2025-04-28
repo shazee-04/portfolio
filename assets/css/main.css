@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: 'martin';
+    src: url('../fonts/martin.ttf');
+    font-weight: 100;
+}
+
 :root {
     --loader-grad-1: linear-gradient(to left, #e2ff50, #f47927, #9a0d32);
     --loader-grad-2: linear-gradient(to right, #faffdf, #cccccc);
@@ -84,6 +90,10 @@ body {
     font-family: "Poppins", system-ui !important;
 }
 
+.f-martin {
+    font-family: "martin", system-ui !important;
+}
+
 .fs-xxxl {
     font-size: 8rem !important;
 }
@@ -152,6 +162,38 @@ body {
     --social-icon-filter: invert(0);
 }
 
+/* custom nav-link styles ------------------------------------------------------------------------------------- */
+
+.custom-nav-link .nav-link-span {
+    opacity: 0;
+    margin-right: -20px;
+    transition: opacity ease-in-out 0.2s, padding ease-in-out 0.4s, margin-right ease-in-out 0.2s;
+}
+
+.custom-nav-link:hover .nav-link-span {
+    opacity: 1;
+    margin-right: 0px;
+    padding: 0 20px 0 5px !important;
+}
+
+.custom-nav-link:active .nav-link-span {
+    padding: 0 12px 0 5px !important;
+    transition: padding ease-in-out 0.2s;
+}
+
+.custom-nav-link {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-nav-link:active {
+    background-color: #fdfdfd !important;
+}
+
+.dp {
+    z-index: 1;
+    margin: 3px;
+}
+
 /* social links bar styles ------------------------------------------------------------------------------- */
 
 .hero-section .socials {
@@ -187,9 +229,9 @@ body {
     /* background-color: #11111125; */
 }
 
-.hero-section .socials div a:hover {
+/* .hero-section .socials div a:hover {
     margin-inline: 10px;
-}
+} */
 
 .i-github {
     background: url(../icons/social-icons/github.svg);
@@ -229,36 +271,4 @@ body {
     height: var(--social-icon-size);
     aspect-ratio: 1/1;
     filter: var(--social-icon-filter);
-}
-
-/* custom nav-link styles ------------------------------------------------------------------------------------- */
-
-.custom-nav-link .nav-link-span {
-    opacity: 0;
-    margin-right: -20px;
-    transition: opacity ease-in-out 0.2s, padding ease-in-out 0.4s, margin-right ease-in-out 0.2s;
-}
-
-.custom-nav-link:hover .nav-link-span {
-    opacity: 1;
-    margin-right: 0px;
-    padding: 0 20px 0 5px !important;
-}
-
-.custom-nav-link:active .nav-link-span {
-    padding: 0 12px 0 5px !important;
-    transition: padding ease-in-out 0.2s;
-}
-
-.custom-nav-link {
-    transition: background-color 0.3s ease-in-out;
-}
-
-.custom-nav-link:active {
-    background-color: #fdfdfd !important;
-}
-
-.dp {
-    z-index: 1;
-    margin: 3px;
 }
