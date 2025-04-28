@@ -196,7 +196,7 @@ body {
 
 /* social links bar styles ------------------------------------------------------------------------------- */
 
-.hero-section .socials {
+.hero-section .socials-bar {
     padding: 3px;
     backdrop-filter: blur(15px);
     background-color: #ffffff;
@@ -204,32 +204,31 @@ body {
     transition: background-color 0.8s ease-in-out;
 }
 
-.hero-section .socials:hover {
+.hero-section .socials-bar:hover {
     background-color: #ffffff;
 }
 
-.hero-section .socials a {
+.hero-section .socials-bar {
+    gap: 4px;
+}
+
+.hero-section .socials-bar a {
     display: flex;
     justify-content: center;
     align-items: center;
     aspect-ratio: 1/1;
     padding-inline: 8px;
     border-radius: 25px;
-    transition: margin-inline 0.4s ease-in-out 0.1s;
+    border: solid 1px #111111;
+    /* transition: margin-inline 0.4s ease-in-out 0.1s; */
 }
 
-.hero-section .socials a i {
+.hero-section .socials-bar a i {
     color: #313131;
     font-size: 1.125rem;
 }
 
-.hero-section .socials div a {
-    margin-inline: 2px;
-    border: solid 1px #111111;
-    /* background-color: #11111125; */
-}
-
-/* .hero-section .socials div a:hover {
+/* .hero-section .socials-bar div a:hover {
     margin-inline: 10px;
 } */
 
