@@ -64,7 +64,7 @@ function initFlowingMenu(items, containerId) {
         xPercent: -50,
         ease: "linear",
         repeat: -1,
-        duration: 15
+        duration: 10
       });
     });
 
@@ -96,9 +96,9 @@ function initFlowingMenu(items, containerId) {
 
 // Example usage:
 const menuItems = [
-  { link: '#aboutme', text: "I'm Shazee Sandaruwan", text_hovered: "Engineer by passion, designer by heart, creator by soul ●" },
-  { link: '#aboutme', text: "BSC in Software Engineering", text_hovered: "Always learning, always creating, always dreaming bigger ●" },
-  { link: '#aboutme', text: "I Love Building Stuff", text_hovered: "Turning concepts into experiences, one project at a time ●" },
+  { link: '#aboutme', text: "I'm Shazee Sandaruwan ● I'm Shazee Sandaruwan", text_hovered: "Engineer by passion, designer by heart, creator by soul ●" },
+  { link: '#aboutme', text: "BSC in Software Engineering ● BSC in Software Engineering", text_hovered: "Always learning, always creating, always dreaming bigger ●" },
+  { link: '#aboutme', text: "I Love Building Stuff ● I Love Building Stuff", text_hovered: "Turning concepts into experiences, one project at a time ●" },
 ];
 
 initFlowingMenu(menuItems, 'flowing-menu');
