@@ -8,9 +8,9 @@ const updateProgress = (instance) =>
 const main = () => {
   document.body.style.overflow = 'auto';
   // document.scrollingElement.scrollTo(0, 0);
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-  }, 500);
+  // setTimeout(() => {
+  //   window.scrollTo(0, 0);
+  // }, 500);
 
   gsap.to(document.querySelector('.hero-section .loader'), { autoAlpha: 0, duration: 0.5 });
 
