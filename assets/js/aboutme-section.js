@@ -95,9 +95,10 @@ function initFlowingMenu(items, containerId) {
 }
 
 // Example usage:
-const demoItems = [
-  { link: '#', text: '→', text_hovered: "Hi, I'm Shazee Sandaruwan. Engineer by passion, designer by heart, creator by soul ●" },
-  { link: '#', text: '→', text_hovered: "Turning concepts into experiences, one project at a time ●" },
-  { link: '#', text: '→', text_hovered: "Always learning, always creating, always dreaming bigger ●" },
+const menuItems = [
+  { link: '#aboutme', text: "I'm Shazee Sandaruwan", text_hovered: "Engineer by passion, designer by heart, creator by soul ●" },
+  { link: '#aboutme', text: "BSC in Software Engineering", text_hovered: "Always learning, always creating, always dreaming bigger ●" },
+  { link: '#aboutme', text: "I Love Building Stuff", text_hovered: "Turning concepts into experiences, one project at a time ●" },
 ];
-initFlowingMenu(demoItems, 'flowing-menu');
+
+initFlowingMenu(menuItems, 'flowing-menu');
