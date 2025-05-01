@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/skills-section.css">
     <!-- projects-section css -->
     <link rel="stylesheet" href="assets/css/projects-section.css">
+    <!-- contact-section css -->
+    <link rel="stylesheet" href="assets/css/contact-section.css">
     <!-- scrollprogress bar css -->
     <link rel="stylesheet" href="assets/css/scrollprogress.css">
     <!-- mousefollower css -->
@@ -245,7 +247,7 @@
 
         <div class="dark-marquee-wrapper">
             <div class="dark-marquee-track" id="dark-marquee-track"></div>
-            
+
             <div class="dark-marquee-gradient dark-marquee-gradient-left"></div>
             <div class="dark-marquee-gradient dark-marquee-gradient-right"></div>
         </div>
@@ -367,6 +369,23 @@
         </div>
     </section>
 
+    <!-- contact section -->
+    <section class="contact-section mt-5 px-2">
+        <div class="title">Get In Touch<span> → </span></div>
+
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="nameInput" class="contact-input" placeholder="Your Name" required />
+                <input type="email" id="emailInput" class="contact-input" placeholder="Your Email" required />
+                <textarea id="messageInput" class="contact-input" placeholder="Your Message" rows="6"
+                    required></textarea>
+                <button type="submit" class="contact-button">Send</button>
+                <p id="formStatus"></p>
+            </form>
+        </div>
+    </section>
+
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.bundle.js"></script>
     <!-- gsap latest -->
@@ -389,6 +408,8 @@
         requestAnimationFrame(raf);
     </script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <!-- mousefollower js -->
     <script src="assets/js/mousefollower.js"></script>
 
@@ -400,6 +421,8 @@
     <script src="assets/js/skills-section.js"></script>
     <!-- projects section -->
     <script src="assets/js/projects-section.js"></script>
+    <!-- contact section -->
+    <script src="assets/js/contact-section.js"></script>
 
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
