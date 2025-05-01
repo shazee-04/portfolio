@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     emailjs.init("qcCnkIvWP86AqPk3K"); // 🔁 Replace this
 
     // GSAP animation
-    gsap.from(".contact-container", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        ease: "power3.out"
-    });
+    // gsap.from(".contact-container", {
+    //     opacity: 0,
+    //     y: 50,
+    //     duration: 1,
+    //     ease: "power3.out"
+    // });
 
     const form = document.getElementById("contactForm");
     const status = document.getElementById("formStatus");
