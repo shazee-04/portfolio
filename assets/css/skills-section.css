@@ -1,0 +1,71 @@
+.skills-section {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.dark-marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 1.5rem 0;
+}
+
+.dark-marquee-track {
+    display: flex;
+    gap: 1rem;
+    will-change: transform;
+}
+
+.dark-marquee-gradient {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    z-index: 2;
+}
+
+.dark-marquee-gradient-left {
+    left: 0;
+    background: linear-gradient(to right, #0f0f0f, transparent);
+}
+
+.dark-marquee-gradient-right {
+    right: 0;
+    background: linear-gradient(to left, #0f0f0f, transparent);
+}
+
+.tech-marquee-card {
+    flex-shrink: 0;
+    width: 8rem;
+    height: 6rem;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eaeaea;
+    transition: background-color 0.3s ease;
+}
+
+.tech-marquee-card:hover {
+    background-color: #2a2a2a;
+}
+
+.tech-marquee-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
+}
+
+.tech-marquee-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+}
