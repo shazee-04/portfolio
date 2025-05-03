@@ -18,7 +18,7 @@ const main = () => {
       x: xEnd,
       scrollTrigger: {
         trigger: section,
-        start: '-=250% bottom',
+        start: '-=600px bottom',
         end: 'bottom top',
         scrub: 0.5,
         markers: false
