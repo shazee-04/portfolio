@@ -1,12 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// scroll progress bar animations
+// scroll progress bar animations --------------------------------------------------------------------------------
 gsap.to('progress', {
   value: 100,
   ease: 'none',
   scrollTrigger: { scrub: 0.5 }
 });
 
+
+// social links bar animations -----------------------------------------------------------------------------------
 const dock = document.querySelector('.socials-bar');
 const icons = document.querySelectorAll('.socials-icon');
 
@@ -83,4 +85,96 @@ dock.addEventListener('mouseleave', () => {
       ease: config.animationEase
     });
   });
+});
+
+// section title animations -----------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  // CONFIGURATION SECTION
+  const config = {
+    // fromSettings: { wght: 200, opsz: 9 },
+    // toSettings: { wght: 1000, opsz: 40 },
+    fromSettings: { wght: 1000, opsz: 40 },
+    toSettings: { wght: 200, opsz: 9 },
+    radius: 100,
+    falloff: "linear", // "linear", "exponential", "gaussian"
+    affectX: true,     // true = consider X axis
+    affectY: true,     // true = consider Y axis
+    trackMouseInside: "body", // selector for where the mouse should be tracked
+    letterClass: ".animate-letters",     // selector for animating letters
+  };
+
+  // PREPARE TEXT ELEMENTS
+  const textElements = document.querySelectorAll(config.letterClass);
+  const animatedLetters = [];
+
+  textElements.forEach(textEl => {
+    const container = textEl.closest(".title-container") || textEl;
+    const originalText = textEl.textContent;
+    textEl.textContent = "";
+
+    [...originalText].forEach(char => {
+      const span = document.createElement("span");
+
+      if (char === ' ') {
+        span.innerHTML = '&nbsp;'; // non-breaking space
+        span.classList.add("letter-space"); // 👈 Add class for styling
+      } else {
+        span.textContent = char;
+      }
+
+      span.style.display = "inline-block";
+      textEl.appendChild(span);
+      animatedLetters.push({ span, container });
+    });
+
+  });
+
+  // MOUSE TRACKING WITHIN CUSTOM AREA
+  let mouseTX = 0, mouseTY = 0;
+  document.querySelectorAll(config.trackMouseInside).forEach(el => {
+    el.addEventListener("mousemove", e => {
+      mouseTX = e.clientX;
+      mouseTY = e.clientY;
+    }, { passive: true });
+  });
+
+  // FALLOFF FUNCTION
+  function getFalloffValue(distance) {
+    const norm = Math.min(Math.max(1 - distance / config.radius, 0), 1);
+    switch (config.falloff) {
+      case "exponential": return norm ** 2;
+      case "gaussian": return Math.exp(-((distance / (config.radius / 2)) ** 2) / 2);
+      case "linear":
+      default: return norm;
+    }
+  }
+
+  // UPDATE ANIMATION LOOP
+  function updateLetters() {
+    animatedLetters.forEach(({ span }) => {
+      const spanRect = span.getBoundingClientRect();
+      const letterX = spanRect.left + spanRect.width / 2;
+      const letterY = spanRect.top + spanRect.height / 2;
+
+      let dx = config.affectX ? letterX - mouseTX : 0;
+      let dy = config.affectY ? letterY - mouseTY : 0;
+
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance > config.radius) {
+        span.style.setProperty('--vfph-wght', config.fromSettings.wght);
+        span.style.setProperty('--vfph-opsz', config.fromSettings.opsz);
+      } else {
+        const factor = getFalloffValue(distance);
+        const wght = config.fromSettings.wght + (config.toSettings.wght - config.fromSettings.wght) * factor;
+        const opsz = config.fromSettings.opsz + (config.toSettings.opsz - config.fromSettings.opsz) * factor;
+        span.style.setProperty('--vfph-wght', wght);
+        span.style.setProperty('--vfph-opsz', opsz);
+      }
+    });
+
+    requestAnimationFrame(updateLetters);
+  }
+
+  updateLetters();
 });
