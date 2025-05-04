@@ -26,18 +26,35 @@ function createTechCard({ name, img }) {
 
 function startTechMarquee() {
     const track = document.getElementById("dark-marquee-track");
+    const track2 = document.getElementById("dark-marquee-track-2");
     const cards = techStack.map(createTechCard);
+    const cards2 = techStack.map(createTechCard);
 
     cards.forEach(card => track.appendChild(card));
     cards.forEach(card => track.appendChild(card.cloneNode(true))); // duplicate for seamless loop
     cards.forEach(card => track.appendChild(card.cloneNode(true))); // duplicate for seamless loop
     cards.forEach(card => track.appendChild(card.cloneNode(true))); // duplicate for seamless loop
 
+    cards2.forEach(card => track2.appendChild(card));
+    cards2.forEach(card => track2.appendChild(card.cloneNode(true))); // duplicate for seamless loop
+    cards2.forEach(card => track2.appendChild(card.cloneNode(true))); // duplicate for seamless loop
+    cards2.forEach(card => track2.appendChild(card.cloneNode(true))); // duplicate for seamless loop
+
     const totalWidth = track.scrollWidth / 2 + 10;
 
     gsap.to(track, {
         x: -totalWidth,
-        duration: 25,
+        duration: 40,
+        ease: "linear",
+        repeat: -1,
+        modifiers: {
+            x: gsap.utils.unitize(x => parseFloat(x) % totalWidth)
+        }
+    });
+
+    gsap.to(track2, {
+        x: totalWidth,
+        duration: 45,
         ease: "linear",
         repeat: -1,
         modifiers: {
@@ -46,4 +63,6 @@ function startTechMarquee() {
     });
 }
 
-window.addEventListener("DOMContentLoaded", startTechMarquee);
+window.addEventListener("DOMContentLoaded", () => {
+    startTechMarquee();
+});
