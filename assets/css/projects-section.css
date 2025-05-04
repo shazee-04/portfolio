@@ -1,25 +1,17 @@
 .projects-section {
     width: 100%;
-    /* height: 80vh; */
     position: relative;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .gx-tilted-cards-wrapper {
     display: flex;
     width: 100%;
-    padding: 20px 0;
-    /* height: 100%; */
-    /* flex-wrap: wrap; */
-    /* gap: 20px; */
+    padding:25px 0 15px 0;
     justify-content: space-evenly;
 }
 
 .gx-tilted-card-container {
     position: relative;
-    /* width: 300px; */
-    /* height: 300px; */
     perspective: 800px;
     margin: auto;
     display: flex;
@@ -27,31 +19,9 @@
     justify-content: center;
 }
 
-.gx-tilted-card-warning {
-    position: absolute;
-    top: 1rem;
-    font-size: 0.875rem;
-    text-align: center;
-    display: none;
-    color: #e63946;
-    z-index: 5;
-}
-
-@media (max-width: 640px) {
-    .gx-tilted-card-warning {
-        display: block;
-    }
-
-    .gx-tilted-card-caption {
-        display: none;
-    }
-}
-
 .gx-tilted-card-inner {
     position: relative;
     width: 30vw;
-    /* margin-bottom: 10px; */
-    /* height: 270px; */
     aspect-ratio: 16/9;
     border-radius: 15px;
     overflow: hidden;
@@ -61,9 +31,7 @@
 
 .gx-tilted-card-img {
     width: 100%;
-    /* height: 100%; */
-    /* aspect-ratio: 16/9; */
-    filter: grayscale(0.5);
+    filter: grayscale(0.8);
     object-fit: cover;
     transform: translateZ(0);
     transition: filter 0.5s ease-in-out;
@@ -124,11 +92,11 @@
     border-radius: 12px;
     background-color: #fff;
     border: 1.5px solid #ffffff00;
-    transition: all 0.2s ease-in-out;
+    filter: blur(2px);
+    transition: opacity 0.4s ease, filter 0.2s ease;
 }
 
 .gx-tilted-card-link-text span {
-    /* position: absolute; */
     margin-left: -14px;
     opacity: 0;
     padding-left: 6px;
@@ -137,6 +105,7 @@
 
 .gx-tilted-card-container:hover .gx-tilted-card-link-text {
     opacity: 1;
+    filter: blur(0);
     animation: live-border 2s linear infinite;
 }
 
@@ -170,11 +139,11 @@
     }
 
     30% {
-        border: 2px solid #8cff00;
+        border: 2px solid #111111;
     }
 
     60% {
-        border: 2px solid #8cff00;
+        border: 2px solid #111111;
     }
 
     100% {
