@@ -402,16 +402,39 @@
             </div>
         </div>
 
-        <div class="contact-container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <input type="text" id="nameInput" class="contact-input" placeholder="Your Name" required />
-                <input type="email" id="emailInput" class="contact-input" placeholder="Your Email" required />
-                <textarea id="messageInput" class="contact-input" placeholder="Your Message" rows="6"
-                    required></textarea>
-                <button type="submit" class="contact-button">Send</button>
-                <p id="formStatus"></p>
-            </form>
+        <div class="d-flex justify-content-evenly w-100">
+            <div class="contact-card-container">
+                <a href="https://lnk.bio/shazee-04" target="_blank" class="contact-card text-white text-decoration-none">
+                    <span class="i-verified"></span>
+                    Shazee Sandaruwan
+                </a>
+                <a href="mailto:mgssrangajeewa@gmail.com" class="contact-card text-white text-decoration-none">
+                    <span class="i-verified"></span>
+                    mgssrangajeewa@gmail.com
+                </a>
+                <div class="contact-card fst-italic">
+                    <span class="i-arrow-right"></span>
+                    Let's Build Something Together
+                </div>
+                <!-- <div class="contact-text-card">
+                    <span>Want to start a project?</span> Or just say hello!
+                </div> -->
+            </div>
+
+            <div class="emailjs-container">
+                <form id="contactForm">
+                    <input type="text" id="nameInput" class="contact-input" placeholder="Name" required />
+                    <input type="email" id="emailInput" class="contact-input" placeholder="Email" required />
+                    <textarea id="messageInput" class="contact-input" placeholder="Type a Message" rows="12"
+                        required></textarea>
+
+                    <div class="w-100 d-flex justify-content-end">
+                        <button type="submit" class="contact-button">
+                            <div class="i-send ms-auto"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
