@@ -1,58 +1,95 @@
-body {
-    background-color: #121212;
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #f0f0f0;
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
 }
 
-.contact-container {
+.emailjs-container {
     max-width: 500px;
-    margin: 80px auto;
     padding: 30px;
-    background-color: #1e1e1e;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    background-color: #111;
+    border-radius: 25px;
+    /* border: 1px solid #252525; */
 }
 
-.contact-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #00ffff;
+.contact-card-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 12px;
+}
+
+.contact-card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 18px;
+    margin: 10px 0 20px 0;
+}
+
+.contact-card span {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.contact-text-card {
+    width: 100%;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    margin: 10px 0 20px 0;
+}
+
+.contact-text-card span {
+    font-size: 1rem;
 }
 
 .contact-input {
     width: 100%;
-    padding: 12px;
+    padding: 15px 25px;
     margin: 10px 0;
-    background-color: #2c2c2c;
-    border: 1px solid #333;
-    border-radius: 8px;
+    background-color: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 18px;
     color: #fff;
 }
 
 .contact-input::placeholder {
-    color: #888;
+    color: #fff;
 }
 
 .contact-button {
-    width: 100%;
-    padding: 12px;
-    background: #00ffff;
+    /* width: 100%; */
+    padding: 12px 25px 12px 35px;
+    background: var(--gradient-orange-crush),
+        url('https://assets.codepen.io/16327/noise.png');
+    background-blend-mode: color-dodge;
     color: #000;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 18px 8px 18px 18px;
+    transition: filter 0.3s ease, padding 0.3s ease;
+}
+
+.contact-button div {
     cursor: pointer;
-    transition: background 0.3s;
 }
 
 .contact-button:hover {
-    background: #00cccc;
+    filter: saturate(1.5);
+    padding: 12px 30px 12px 45px;
 }
 
-#formStatus {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
+.contact-button:active {
+    padding: 12px 25px 12px 40px;
 }
