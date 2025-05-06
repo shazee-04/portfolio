@@ -1,20 +1,8 @@
-// "qcCnkIvWP86AqPk3K"
-// "service_rur6fir" "template_ekcx3ii"
-
 document.addEventListener("DOMContentLoaded", () => {
     // Init EmailJS
     emailjs.init("qcCnkIvWP86AqPk3K");
 
-    // GSAP animation
-    // gsap.from(".contact-container", {
-    //     opacity: 0,
-    //     y: 50,
-    //     duration: 1,
-    //     ease: "power3.out"
-    // });
-
     const form = document.getElementById("contactForm");
-    const status = document.getElementById("alert");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -25,13 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const time = new Date().toLocaleString();
 
         if (!name || !email || !message) {
-            status.textContent = "Please fill in all fields.";
-            status.style.color = "orange";
+            customAlert("Please fill all required fields.");
             return;
         }
 
-        status.textContent = "Sending...";
-        status.style.color = "#111";
+        customAlert("sending message...");
 
         emailjs.send("service_rur6fir", "template_ekcx3ii", {
             name: name,
@@ -40,14 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
             time: time
         })
             .then(() => {
-                status.textContent = "Message sent successfully!";
-                status.style.color = "#111";
+                customAlert("message sent successfully!");
                 form.reset();
             })
             .catch((error) => {
                 console.error("EmailJS error:", error);
-                status.textContent = "Failed to send message. Try again.";
-                status.style.color = "orange";
+                customAlert("Failed to send the message. please try again.");
             });
     });
 });
