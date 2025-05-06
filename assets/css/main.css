@@ -165,6 +165,49 @@ body {
     --social-icon-filter: invert(0);
 }
 
+/* alert styles ----------------------------------------------------------------------------------------------- */
+
+.alert-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #2525257b;
+    border: 1px solid #4444447b;
+    backdrop-filter: blur(20px);
+    text-transform: capitalize;
+    filter: blur(2px);
+    margin-top: 2.5rem;
+    padding-inline: 1rem;
+    scale: 0.95;
+    opacity: 0;
+    visibility: hidden;
+    transition: padding-inline 0.3s 0.05s ease,
+        margin-top 0.3s ease,
+        scale 0.3s 0.1s ease,
+        filter 0.3s ease,
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.alert-box-in {
+    padding-inline: 1.5rem;
+    margin-top: 2.5rem;
+    scale: 1;
+    opacity: 1;
+    filter: blur(0);
+    visibility: visible;
+}
+
+.alert-box-out {
+    padding-inline: 1rem;
+    margin-top: 2.5rem;
+    scale: 0.95;
+    opacity: 0;
+    filter: blur(2px);
+    visibility: hidden;
+}
+
 /* custom nav-link styles ------------------------------------------------------------------------------------- */
 
 .custom-nav-link .nav-link-span {
@@ -296,6 +339,16 @@ body {
     height: var(--social-icon-size);
     aspect-ratio: 1/1;
     filter: var(--social-icon-filter);
+}
+
+.i-close {
+    mask: url(../icons/social-icons/close.svg) no-repeat center;
+    -webkit-mask: url(../icons/social-icons/close.svg) no-repeat center;
+    background: var(--gradient-orange-crush),
+        url('https://assets.codepen.io/16327/noise.png');
+    background-size: contain;
+    height: 22px;
+    aspect-ratio: 1/1;
 }
 
 /* section title styles ----------------------------------------------------------------------------------- */
