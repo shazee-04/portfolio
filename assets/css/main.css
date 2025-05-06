@@ -275,6 +275,29 @@ body {
     filter: var(--social-icon-filter);
 }
 
+.i-send {
+    background: url(../icons/social-icons/send.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+}
+
+.i-verified {
+    background: url(../icons/social-icons/verified.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+    filter: var(--social-icon-filter);
+}
+
+.i-arrow-right {
+    background: url(../icons/social-icons/arrow-right.svg);
+    background-size: contain;
+    height: var(--social-icon-size);
+    aspect-ratio: 1/1;
+    filter: var(--social-icon-filter);
+}
+
 /* section title styles ----------------------------------------------------------------------------------- */
 section .title-container {
     position: relative;
