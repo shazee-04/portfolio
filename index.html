@@ -48,6 +48,12 @@
     <!-- <div class="mouse-follower-4" id="mouse-follower-4"></div> -->
     <div class="mouse-follower-sp z-max-0" id="mouse-follower-sp">loading</div>
 
+    <!-- alert -->
+    <div class="alert-box position-fixed top-0 start-50 translate-middle-x rounded-pill py-3 z-max-1" id="alert-div">
+        <div class="f-poppins" id="alert-text">alert message</div>
+        <button type="button" class="d-flex i-close shadow-none ms-2" id="alert-close"></button>
+    </div>
+
     <!-- loader -->
     <progress max="100" value="0"></progress>
 
@@ -471,8 +477,6 @@
         requestAnimationFrame(raf);
     </script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <!-- EmailJS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <!-- mousefollower js -->
     <script src="assets/js/mousefollower.js"></script>
@@ -487,8 +491,13 @@
     <script src="assets/js/projects-section.js"></script>
     <!-- contact section -->
     <script src="assets/js/contact-section.js"></script>
+    <!-- custm alert -->
+     <script src="assets/js/alert.js"></script>
 
-    <!-- custom js -->
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- main js -->
     <script src="assets/js/main.js"></script>
 </body>
 
