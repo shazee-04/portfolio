@@ -3,7 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     // Init EmailJS
-    emailjs.init("qcCnkIvWP86AqPk3K"); // 🔁 Replace this
+    emailjs.init("qcCnkIvWP86AqPk3K");
 
     // GSAP animation
     // gsap.from(".contact-container", {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // });
 
     const form = document.getElementById("contactForm");
-    const status = document.getElementById("formStatus");
+    const status = document.getElementById("alert");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!name || !email || !message) {
             status.textContent = "Please fill in all fields.";
-            status.style.color = "#ff5e5e";
+            status.style.color = "orange";
             return;
         }
 
         status.textContent = "Sending...";
-        status.style.color = "#00ffff";
+        status.style.color = "#111";
 
         emailjs.send("service_rur6fir", "template_ekcx3ii", {
             name: name,
@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
         })
             .then(() => {
                 status.textContent = "Message sent successfully!";
-                status.style.color = "#00ff99";
+                status.style.color = "#111";
                 form.reset();
             })
             .catch((error) => {
                 console.error("EmailJS error:", error);
                 status.textContent = "Failed to send message. Try again.";
-                status.style.color = "#ff5e5e";
+                status.style.color = "orange";
             });
     });
 });
