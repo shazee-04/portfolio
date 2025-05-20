@@ -16,14 +16,21 @@ const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const el = entry.target;
-      const el2 = entry.target;
+      const el_loop = entry.target;
 
-      if (el.classList.contains('contact-section')) {
+      if (el_loop.classList.contains('contact-section')) {
         // customAlert("Send me a message!");
         socialsBar.classList.add("socials-bar-hidden");
+      } else if (el.classList.contains('projects-section')) {
+        customAlert("Hover to view live previews!");
+
+        observer.unobserve(el); // stop observing
+      } else if (el.classList.contains('aboutme-section')) {
+        customAlert("Hover and see the magic!");
+
+        observer.unobserve(el); // stop observing
       }
 
-      // observer.unobserve(el); // stop observing
     } else {
       socialsBar.classList.remove("socials-bar-hidden");
     }
