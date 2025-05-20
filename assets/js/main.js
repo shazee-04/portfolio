@@ -7,6 +7,29 @@ gsap.to('progress', {
   scrollTrigger: { scrub: 0.5 }
 });
 
+const contactSection = document.querySelector('.contact-section');
+const socialsBar = document.getElementById('socials-bar');
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // action when section enters the viewport
+      customAlert("Send me a message!");
+      socialsBar.classList.add("socials-bar-hidden");
+
+      // stop observing after first trigger
+      // observer.unobserve(entry.target);
+    } else {
+      // Action when section leaves the viewport
+      socialsBar.classList.remove("socials-bar-hidden");
+    }
+  });
+}, {
+  threshold: 0.8 // Trigger when 50% of the section is visible
+});
+
+observer.observe(contactSection);
+
 
 // social links bar animations -----------------------------------------------------------------------------------
 const dock = document.querySelector('.socials-bar');
@@ -40,15 +63,15 @@ dock.addEventListener('mousemove', (e) => {
       influence = 1 - dist / config.influenceRange;
     }
 
-    // Calculate target size and margin
-    const targetSize = config.defaultSize + influence * (config.magnifiedSize - config.defaultSize);
-    const targetMargin = config.defaultMargin + influence * (config.maxMargin - config.defaultMargin);
+    // Calculate contactSection size and margin
+    const contactSectionSize = config.defaultSize + influence * (config.magnifiedSize - config.defaultSize);
+    const contactSectionMargin = config.defaultMargin + influence * (config.maxMargin - config.defaultMargin);
 
     // Animate size
     if (config.enableMagnify) {
       gsap.to(icon, {
-        width: targetSize,
-        height: targetSize,
+        width: contactSectionSize,
+        height: contactSectionSize,
         duration: config.animationDuration,
         ease: config.animationEase
       });
@@ -57,8 +80,8 @@ dock.addEventListener('mousemove', (e) => {
     // Animate margin
     if (config.enableMargin) {
       gsap.to(icon, {
-        marginLeft: `${targetMargin}px`,
-        marginRight: `${targetMargin}px`,
+        marginLeft: `${contactSectionMargin}px`,
+        marginRight: `${contactSectionMargin}px`,
         duration: config.animationDuration,
         ease: config.animationEase
       });
