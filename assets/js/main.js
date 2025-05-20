@@ -7,28 +7,30 @@ gsap.to('progress', {
   scrollTrigger: { scrub: 0.5 }
 });
 
-const contactSection = document.querySelector('.contact-section');
+
+// observer ------------------------------------------------------------------------------------------------------
+const targets = document.querySelectorAll('.observe-me');
 const socialsBar = document.getElementById('socials-bar');
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // action when section enters the viewport
-      customAlert("Send me a message!");
-      socialsBar.classList.add("socials-bar-hidden");
+      const el = entry.target;
+      const el2 = entry.target;
 
-      // stop observing after first trigger
-      // observer.unobserve(entry.target);
+      if (el.classList.contains('contact-section')) {
+        // customAlert("Send me a message!");
+        socialsBar.classList.add("socials-bar-hidden");
+      }
+
+      // observer.unobserve(el); // stop observing
     } else {
-      // Action when section leaves the viewport
       socialsBar.classList.remove("socials-bar-hidden");
     }
   });
-}, {
-  threshold: 0.8 // Trigger when 50% of the section is visible
-});
+}, { threshold: 0.8 });
 
-observer.observe(contactSection);
+targets.forEach(target => observer.observe(target));
 
 
 // social links bar animations -----------------------------------------------------------------------------------
