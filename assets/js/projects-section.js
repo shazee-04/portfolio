@@ -1,5 +1,5 @@
-const rotateAmplitude = 3; // How much the card tilts
-const scaleOnHover = 1.03;   // How much the card scales on hover
+const rotateAmplitude = 2; // How much the card tilts
+const scaleOnHover = 1.01;   // How much the card scales on hover
 
 // Loop through all card containers
 document.querySelectorAll('.gx-tilted-card-container').forEach(container => {
