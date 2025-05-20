@@ -13,6 +13,7 @@
 .gx-tilted-card-container {
     position: relative;
     perspective: 800px;
+    padding: 0.75rem !important;
     margin: auto;
     display: flex;
     align-items: center;
@@ -21,7 +22,7 @@
 
 .gx-tilted-card-inner {
     position: relative;
-    width: 30vw;
+    /* width: 30vw; */
     aspect-ratio: 16/9;
     border-radius: 15px;
     overflow: hidden;
