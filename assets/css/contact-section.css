@@ -69,8 +69,14 @@
 }
 
 .contact-button {
+    --p1: 12px;
+    --p2: 25px;
+    --p3: 35px;
+    --p4: 32px;
+    --p5: 45px;
+    --p6: 40px;
     /* width: 100%; */
-    padding: 12px 25px 12px 35px;
+    padding: var(--p1) var(--p2) var(--p1) var(--p3);
     background: var(--gradient-orange-crush),
         url('https://assets.codepen.io/16327/noise.png');
     background-blend-mode: color-dodge;
@@ -87,9 +93,9 @@
 
 .contact-button:hover {
     filter: saturate(1.5);
-    padding: 12px 30px 12px 45px;
+    padding: var(--p1) var(--p4) var(--p1) var(--p5);
 }
 
 .contact-button:active {
-    padding: 12px 25px 12px 40px;
+    padding: var(--p1) var(--p2) var(--p1) var(--p6);
 }
