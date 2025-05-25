@@ -35,7 +35,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       socialsBar.classList.remove("socials-bar-hidden");
     }
   });
-}, { threshold: 0.8 });
+}, { threshold: 0.3 });
 
 targets.forEach(target => observer.observe(target));
 
