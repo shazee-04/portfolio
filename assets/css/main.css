@@ -388,6 +388,12 @@ section .title-text {
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    section .title-text {
+        font-size: 2rem;
+    }
+}
+
 .animate-letters span {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-variation-settings: "wght" var(--vfph-wght, 400), "opsz" var(--vfph-opsz, 9);
