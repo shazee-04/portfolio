@@ -59,7 +59,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-transparent" id="navbar">
         <div class="container-fluid align-items-center position-relative">
             <div class="d-flex align-items-center">
-                <button class="navbar-toggler d-lg-none bg-white border-0 shadow-none px-2 me-2" type="button"
+                <button class="navbar-toggler d-lg-none bg-white text-dark border-0 shadow-none px-2 me-2" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="bi bi-list"></span>
@@ -87,8 +87,10 @@
                 </ul>
             </div>
 
-            <div class="dp-div d-flex align-items-center bg-white rounded-pill justify-content-end" id="dp-div">
-                <div class="welcome-msg text-black d-flex align-items-center f-paytone fs-5 ps-3 pe-2" id="welcome-msg">
+            <div class="dp-div d-flex align-items-center bg-white rounded-pill justify-content-end" id="dp-div"
+                onclick="window.open('https://lnk.bio/shazee-04', '_blank')">
+                <div class="welcome-msg text-black d-none d-sm-flex align-items-center f-paytone fs-5 ps-3 pe-2"
+                    id="welcome-msg">
                     PORTFOLIO!
                 </div>
                 <div class="dp bg-dark rounded-circle overflow-hidden" style="aspect-ratio: 1/1; height: 32px;">
@@ -99,14 +101,14 @@
     </nav>
 
     <!-- navbar sm -->
-    <div class="collapse bg-white" id="collapsibleNavId">
+    <div class="collapse bg-transparent" id="collapsibleNavId">
         <div class="p-2">
             <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
                 href="#aboutme-section" aria-current="page">
                 <span class="bi bi-arrow-right nav-link-span"></span>
                 About
             </a>
-            <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1"
+            <a class="nav-link custom-nav-link text-black bg-white f-poppins fw-semibold text-uppercase br-12 px-3 py-1 mt-2"
                 href="#projects-section" aria-current="page">
                 <span class="bi bi-arrow-right nav-link-span"></span>
                 Projects
@@ -340,7 +342,7 @@
 
                 <div class="gx-tilted-card-caption">E-Commerce Site</div>
             </div>
-        <!-- </div>
+            <!-- </div>
         <div class="gx-tilted-cards-wrapper"> -->
             <div class="col gx-tilted-card-container" data-caption="E-Commerce Site">
                 <div class="gx-tilted-card-inner">
@@ -447,11 +449,11 @@
         <!-- <div class="col-6"></div> -->
         <div class="w-100 d-flex justify-content-center justify-content-md-end px-3">
             <div class="text-center text-white f-poppins bg-dark opacity-25 rounded-pill p-2 px-4 my-2">
-                © 2025 Designed  & Developed by Shazee Sandaruwan.
+                © 2025 Designed & Developed by Shazee Sandaruwan.
             </div>
         </div>
     </footer>
-    
+
 
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
