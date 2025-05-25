@@ -171,6 +171,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: max-content;
     color: #fff;
     background-color: #2525257b;
     border: 1px solid #4444447b;
