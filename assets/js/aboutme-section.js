@@ -2,6 +2,10 @@ function initFlowingMenu(items, containerId) {
   const container = document.getElementById(containerId);
   const animationDefaults = { duration: 0.6, ease: 'expo' };
 
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+
   function distMetric(x, y, x2, y2) {
     const xDiff = x - x2;
     const yDiff = y - y2;
@@ -21,7 +25,11 @@ function initFlowingMenu(items, containerId) {
     const link = document.createElement('a');
     link.className = 'flowing-menu__item-link';
     link.href = item.link;
-    link.textContent = item.text;
+    if (isMobile()) {
+      link.textContent = item.text_mobile;
+    } else {
+      link.textContent = item.text;
+    }
 
     const marquee = document.createElement('div');
     marquee.className = 'flowing-menu__marquee';
@@ -98,19 +106,23 @@ function initFlowingMenu(items, containerId) {
 const menuItems = [
   {
     link: '#aboutme', text: "I'm Shazee Sandaruwan ● I'm Shazee Sandaruwan",
-    text_hovered: "Engineer by passion, designer by heart, creator by soul ●"
+    text_hovered: "Engineer by passion, designer by heart, creator by soul ●",
+    text_mobile: "Shazee Sandaruwan"
   },
   {
     link: '#aboutme', text: "I Love Building Stuff ● I Love Building Stuff",
-    text_hovered: "Turning concepts into experiences, one project at a time ●"
+    text_hovered: "Turning concepts into experiences, one project at a time ●",
+    text_mobile: "Innovative Engineer"
   },
   {
     link: '#aboutme', text: "Obsessed with designing ● Obsessed with designing",
-    text_hovered: "Creative Design, Distinctive Branding ●"
+    text_hovered: "Creative Design, Distinctive Branding ●",
+    text_mobile: "Creative Designer"
   },
   {
     link: '#aboutme', text: "BSC in Software Engineering ● BSC in Software Engineering",
-    text_hovered: "Always learning, always creating, always dreaming bigger ●"
+    text_hovered: "Always learning, always creating, always dreaming bigger ●",
+    text_mobile: "BSC in Soft. Engineering"
   },
 ];
 
