@@ -1,6 +1,8 @@
 let currentAlertTimeout; // Shared timeout to manage auto-dismiss
 let isAnimating = false; // Flag to prevent overlapping animations
 
+let alertTimout = 2500; // Default timeout for alert
+
 function customAlert(msg) {
     const alertBox = document.getElementById('alert-div');
     const alertText = document.getElementById('alert-text');
@@ -59,6 +61,6 @@ function customAlert(msg) {
             alertBox.addEventListener('transitionend', () => {
                 alertBox.classList.remove('alert-box-out');
             }, { once: true });
-        }, 2000);
+        }, alertTimout);
     }
 }
