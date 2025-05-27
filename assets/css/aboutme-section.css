@@ -45,7 +45,25 @@
   white-space: nowrap;
   font-weight: bolder;
   color: #6c6c6c !important;
-  font-size: 12vh;
+  font-size: clamp(3.4rem, 6vw, 16rem);
+}
+
+@media (max-width: 768px) {
+  .aboutme-section .flowing-menu__item-link {
+    flex-wrap: wrap;
+    white-space: normal;
+    /* justify-content: center; */
+    text-align: left;
+    font-size: 3.4rem;
+    padding-left: 10px;
+    line-height: 1.1;
+  }
+
+  .aboutme-section .flowing-menu__marquee-inner span {
+    flex-wrap: wrap;
+    /* white-space: normal; */
+    font-size: 3rem;
+  }
 }
 
 .aboutme-section .flowing-menu__item-link:hover {
@@ -91,7 +109,7 @@
   white-space: nowrap;
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 12vh;
+  font-size: clamp(3.4rem, 6vw, 16rem);
   line-height: 1.2;
   padding: 0 1vw;
 }
