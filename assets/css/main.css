@@ -102,7 +102,13 @@ body {
 }
 
 .fs-xxl {
-    font-size: 7rem !important;
+    font-size: 8vw !important;
+}
+
+@media (max-width: 768px) {
+    .fs-xxl {
+        font-size: 3rem !important;
+    }
 }
 
 .fs-xl {
