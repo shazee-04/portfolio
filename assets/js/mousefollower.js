@@ -39,6 +39,16 @@ let h_title_2 = "and also a designer";
 let h_gallery = "explore";
 let h_title_3 = "obviously";
 let h_title_4 = "a good one";
+let h_about_section = "about me";
+let h_skills_section = "top Skills";
+let h_projects_section = "my projects";
+let h_project_1 = "featuring a modern & clean UI";
+let h_project_2 = "my first ever project";
+let h_project_3 = "with smooth interactive animations";
+let h_project_4 = "custom website development";
+let h_project_5 = "demo of blender & model-viewer";
+let h_project_6 = "a modern way to login";
+let h_contact_section = "get in touch";
 let h_delay = 0.1;
 
 // mouse hover - loader -------------------------------------------------------------------------------------
@@ -120,6 +130,81 @@ document.getElementById("scrolling-text-4").addEventListener("mouseenter", () =>
 
 document.getElementById("scrolling-text-4").addEventListener("mouseleave", () => {
   gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+
+// mouse hover - navbar dp div ------------------------------------------------------------------------------------------
+document.getElementById("aboutme-section").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_about_section });
+});
+
+document.getElementById("aboutme-section").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - navbar dp div ------------------------------------------------------------------------------------------
+document.getElementById("projects-section").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_projects_section });
+});
+
+document.getElementById("projects-section").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - navbar dp div ------------------------------------------------------------------------------------------
+document.getElementById("skills-section").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_skills_section });
+});
+
+document.getElementById("skills-section").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - navbar dp div ------------------------------------------------------------------------------------------
+document.getElementById("contact-section").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_contact_section });
+});
+
+document.getElementById("contact-section").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_default });
+});
+
+// mouse hover - projects section ------------------------------------------------------------------------------------------
+document.getElementById("project-1").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_project_1 });
+});
+document.getElementById("project-1").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_projects_section });
+});
+document.getElementById("project-2").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_project_2 });
+});
+document.getElementById("project-2").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_projects_section });
+});
+document.getElementById("project-3").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_project_3 });
+});
+document.getElementById("project-3").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_projects_section });
+});
+document.getElementById("project-4").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_project_4 });
+});
+document.getElementById("project-4").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_projects_section });
+});
+document.getElementById("project-5").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_project_5 });
+});
+document.getElementById("project-5").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_projects_section });
+});
+document.getElementById("project-6").addEventListener("mouseenter", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_project_6 });
+});
+document.getElementById("project-6").addEventListener("mouseleave", () => {
+  gsap.to(".mouse-follower-sp", { textContent: h_projects_section });
 });
 
 
