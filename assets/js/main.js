@@ -18,7 +18,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       const el = entry.target;
       const el_loop = entry.target;
 
-      if (el_loop.classList.contains('contact-section')) {
+      if (el_loop.classList.contains('footer-section')) {
         // customAlert("Send me a message!");
         socialsBar.classList.add("socials-bar-hidden");
       } else if (el.classList.contains('projects-section')) {
