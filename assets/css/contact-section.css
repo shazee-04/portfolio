@@ -59,6 +59,10 @@
     font-size: 1rem;
 }
 
+#nameInput {
+    text-transform: capitalize;
+}
+
 .contact-input {
     width: 100%;
     padding: 15px 25px;
