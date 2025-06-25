@@ -1,9 +1,30 @@
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.recaptcha-icon {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 15px;
+    height: 42px;
+    width: 100px;
+}
+
+.recaptcha-icon img {
+    height: 100%;
+}
+
 .contact-section {
     width: 100%;
     min-height: 100vh;
 }
 
-.contact-section .row > * {
+.contact-section .row>* {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
