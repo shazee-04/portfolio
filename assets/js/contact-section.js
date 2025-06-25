@@ -17,21 +17,29 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        customAlert("sending message...");
+        // Execute reCAPTCHA v3 and get token
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Ld5wmwrAAAAAD26ke_XsZJnubxDNd3PCIfHQoW8', { action: 'submit' }).then(function (token) {
+                document.getElementById('recaptcha-token').value = token;
 
-        emailjs.send("service_rur6fir", "template_ekcx3ii", {
-            name: name,
-            email: email,
-            message: message,
-            time: time
-        })
-            .then(() => {
-                customAlert("message sent successfully!");
-                form.reset();
-            })
-            .catch((error) => {
-                console.error("EmailJS error:", error);
-                customAlert("Failed to send the message. please try again.");
+                customAlert("Sending message...");
+
+                emailjs.send("service_rur6fir", "template_glvvxw4", {
+                    name: name,
+                    email: email,
+                    message: message,
+                    time: time,
+                    token: token
+                })
+                    .then(() => {
+                        customAlert("Message sent successfully!");
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        console.error("EmailJS error:", error);
+                        customAlert("Failed to send the message. Please try again.");
+                    });
             });
+        });
     });
 });

@@ -67,6 +67,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
         rel="stylesheet">
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld5wmwrAAAAAD26ke_XsZJnubxDNd3PCIfHQoW8"></script>
 </head>
 
 <body>
@@ -466,6 +467,7 @@
                     <textarea id="messageInput" class="contact-input" placeholder="Type a Message" rows="12"></textarea>
 
                     <div class="w-100 d-flex justify-content-end">
+                        <input type="hidden" name="recaptcha_token" id="recaptcha-token" />
                         <button type="submit" class="contact-button">
                             <div class="i-send ms-auto"></div>
                         </button>
