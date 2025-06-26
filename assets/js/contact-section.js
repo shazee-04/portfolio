@@ -5,11 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contactForm");
 
     async function validateEmailWithMailboxlayer(email) {
-        const accessKey = "6b18c820025f93028f5440f01a7fd424"; // Replace with your actual key
-        const url = `https://apilayer.net/api/check?access_key=${accessKey}&email=${encodeURIComponent(email)}&smtp=1&format=1`;
+        const apiKey = "5d8c0792564c4267aea350a9e403fc5f";
+        const url = `https://emailvalidation.abstractapi.com/v1/?api_key=${apiKey}&email=${encodeURIComponent(email)}`;
 
         try {
             const response = await fetch(url);
+            if (!response.ok) {
+                console.error("HTTP error:", response.status);
+                return null;
+            }
             const data = await response.json();
             return data;
         } catch (error) {
@@ -32,8 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Step 1: Validate Email
-        const emailValidation = await validateEmailWithMailboxlayer(email);
-        if (!emailValidation || !emailValidation.format_valid || !emailValidation.smtp_check) {
+        const result = await validateEmailWithMailboxlayer(email);
+        if (
+            !result ||
+            !result.is_valid_format.value === true ||
+            !result.is_smtp_valid.value === true ||
+            !result.is_disposable_email.value === false
+        ) {
             customAlert("Email does not appear to be valid.");
             return;
         }
