@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contactForm");
 
-    // Load runtime config (gitignored) from assets/config/config.json
+    // Load runtime config (gitignored) from config.json
     let APP_CONFIG = null;
 
     async function loadConfig() {
         try {
-            const res = await fetch("assets/config/config.json", { cache: "no-store" });
+            const res = await fetch("config.json", { cache: "no-store" });
             if (!res.ok) throw new Error(`Config HTTP ${res.status}`);
             APP_CONFIG = await res.json();
             return APP_CONFIG;
