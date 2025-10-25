@@ -8,7 +8,13 @@
 
 > A modern, responsive, single‑page portfolio showcasing selected projects, skills, and contact options, built with semantic HTML, modular CSS, and progressive animations powered by GSAP.
 
----
+<div align="">
+	
+[![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/c943acab-ed54-4067-abcb-6f877d7368c3)](https://www.shazee.dev/)
+
+</div>
+
+##
 
 A static portfolio website that highlights:
 
@@ -21,7 +27,7 @@ A static portfolio website that highlights:
 
 It’s implemented as a lightweight, CDN‑powered SPA—no build step required.
 
----
+##
 
 - Fast to host anywhere (GitHub Pages, Netlify, Vercel, your server)
 - Easy to customize (semantic markup, modular CSS per section, isolated JS modules)
