@@ -76,7 +76,7 @@ Sensitive values are loaded at runtime from a git‑ignored config file. Do this
 1) Copy the example file and fill in your values
 
 ```
-assets/config/config.example.json → assets/config/config.json
+config.example.json → config.json
 ```
 
 Fields in `config.json`:
