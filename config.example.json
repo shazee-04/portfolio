@@ -2,6 +2,5 @@
   "emailJsPublicKey": "YOUR_EMAILJS_PUBLIC_KEY",
   "emailJsServiceId": "service_rur6fir",
   "emailJsTemplateId": "template_glvvxw4",
-  "recaptchaSiteKey": "YOUR_RECAPTCHA_V3_SITE_KEY",
   "abstractApiKey": "YOUR_ABSTRACTAPI_KEY"
 }

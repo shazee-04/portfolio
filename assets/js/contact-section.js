@@ -70,39 +70,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // Step 2: reCAPTCHA + EmailJS
-            if (!cfg.recaptchaSiteKey) {
-                customAlert("reCAPTCHA is not configured. See config.json.");
-                return;
-            }
+            // Step 2: EmailJS only (reCAPTCHA removed)
+            customAlert("Sending message...");
 
-            grecaptcha.ready(function () {
-                grecaptcha.execute(cfg.recaptchaSiteKey, { action: 'submit' }).then(function (token) {
-                    document.getElementById('recaptcha-token').value = token;
-
-                    customAlert("Sending message...");
-
-                    emailjs.send(
-                        cfg.emailJsServiceId,
-                        cfg.emailJsTemplateId,
-                        {
-                            name: name,
-                            email: email,
-                            message: message,
-                            time: time,
-                            token: token
-                        }
-                    )
-                        .then(() => {
-                            customAlert("Message sent successfully!");
-                            form.reset();
-                        })
-                        .catch((error) => {
-                            console.error("EmailJS error:", error);
-                            customAlert("Failed to send the message. Please try again.");
-                        });
+            emailjs.send(
+                cfg.emailJsServiceId,
+                cfg.emailJsTemplateId,
+                {
+                    name: name,
+                    email: email,
+                    message: message,
+                    time: time
+                }
+            )
+                .then(() => {
+                    customAlert("Message sent successfully!");
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.error("EmailJS error:", error);
+                    customAlert("Failed to send the message. Please try again.");
                 });
-            });
         });
     })();
 });

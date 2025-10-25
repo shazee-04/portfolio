@@ -63,12 +63,11 @@ Most user‑facing content lives in HTML and the section‑specific JS files. Co
 	- Social dock magnify and scroll progress: `assets/js/main.js`
 	- Mouse follower text and parallax bindings: `assets/js/mousefollower.js`
 
-### Contact form (EmailJS + reCAPTCHA + email validation)
+### Contact form (EmailJS + email validation)
 
 The contact form is wired to:
 
 - EmailJS (send emails client‑side)
-- Google reCAPTCHA v3 (spam protection)
 - AbstractAPI Email Validation (basic client‑side validation)
 
 Sensitive values are loaded at runtime from a git‑ignored config file. Do this once after cloning:
@@ -84,12 +83,10 @@ Fields in `config.json`:
 - `emailJsPublicKey` — EmailJS Public Key
 - `emailJsServiceId` — EmailJS Service ID
 - `emailJsTemplateId` — EmailJS Template ID
-- `recaptchaSiteKey` — Google reCAPTCHA v3 site key
 - `abstractApiKey` — AbstractAPI Email Validation key
 
 Notes:
 
-- The reCAPTCHA script tag no longer includes the site key; it is passed to `grecaptcha.execute` at runtime.
 - Client‑side keys are inherently public at runtime. Protect them with origin restrictions, quotas/rate limits, and monitoring in provider dashboards.
 - The contact form may not work when loading the site via `file://` due to browser restrictions on `fetch`. Use a simple local server (e.g., VS Code Live Server).
 
