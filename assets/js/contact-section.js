@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function validateEmailWithAbstract(email) {
         if (!APP_CONFIG?.abstractApiKey) return null;
-        const url = `https://emailvalidation.abstractapi.com/v1/?api_key=${APP_CONFIG.abstractApiKey}&email=${encodeURIComponent(email)}`;
+        const url = `https://emailreputation.abstractapi.com/v1/?api_key=${APP_CONFIG.abstractApiKey}&email=${encodeURIComponent(email)}`;
         try {
             const response = await fetch(url);
             if (!response.ok) {
