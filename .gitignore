@@ -1,5 +1,5 @@
 # Local runtime config holding API keys (do NOT commit)
-assets/config/config.json
+config.json
 
 # OS/editor junk
 .DS_Store
