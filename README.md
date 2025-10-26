@@ -1,7 +1,19 @@
 <div style="text-align: center;">
-  <a href="https://www.shazee.dev/">
-    <img src="https://github.com/user-attachments/assets/c943acab-ed54-4067-abcb-6f877d7368c3" alt="Website Preview" style="width: 100%;">
-  </a>
+	<table>
+	  <tr>
+	    <td style="width: 50%;">
+	      	<a href="https://www.shazee.dev/">
+	    		<img src="https://github.com/user-attachments/assets/c943acab-ed54-4067-abcb-6f877d7368c3" 
+				alt="Website Preview" >
+	  		</a>
+	    </td>
+	    <td style="width: 50%;">
+	      	<a href="https://www.shazee.dev/">
+	    		<img src="https://github.com/shazee-04/shazee-04/blob/main/assets/img/portfolio-preview.jpg?raw=true" alt="Website Preview" >
+	  		</a>
+	    </td>
+	  </tr>
+	</table>
 </div>
 
 #### A static portfolio website that highlights:
