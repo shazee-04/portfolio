@@ -1,22 +1,10 @@
-<div align="center">
-
-# shazee.dev
-
-[![Made with: HTML/CSS/JS](https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS-1f6feb.svg)](#)
-
+<div style="text-align: center;">
+  <a href="https://www.shazee.dev/">
+    <img src="https://github.com/user-attachments/assets/c943acab-ed54-4067-abcb-6f877d7368c3" alt="Website Preview" style="width: 100%;">
+  </a>
 </div>
 
-> A modern, responsive, single‑page portfolio showcasing selected projects, skills, and contact options, built with semantic HTML, modular CSS, and progressive animations powered by GSAP.
-
-<div align="">
-	
-[![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/c943acab-ed54-4067-abcb-6f877d7368c3)](https://www.shazee.dev/)
-
-</div>
-
-##
-
-A static portfolio website that highlights:
+#### A static portfolio website that highlights:
 
 - Hero area with smooth parallax and marquee animations
 - About section with a flowing, hover‑reactive menu
@@ -25,18 +13,18 @@ A static portfolio website that highlights:
 - Contact section using EmailJS + reCAPTCHA with client‑side email validation
 - Social dock that gently magnifies on hover
 
-It’s implemented as a lightweight, CDN‑powered SPA—no build step required.
-
-##
+#### It’s implemented as a lightweight, CDN‑powered SPA—no build step required.
 
 - Fast to host anywhere (GitHub Pages, Netlify, Vercel, your server)
 - Easy to customize (semantic markup, modular CSS per section, isolated JS modules)
 - Smooth, high‑polish feel (Lenis smooth scrolling, GSAP ScrollTrigger, parallax)
 - Production‑ready SEO and social cards (meta tags, Open Graph, Twitter)
 
-## Getting started
+##
 
-This project is static. You can run it locally in seconds.
+### Getting started
+
+- This project is static. You can run it locally in seconds.
 
 ### Prerequisites
 
@@ -54,7 +42,7 @@ You can deploy the repo as‑is to any static host. A custom domain is already u
 
 - Live demo (production): https://shazee.dev/
 
-## Configuration
+### Configuration
 
 Most user‑facing content lives in HTML and the section‑specific JS files. Common edits:
 
@@ -68,8 +56,6 @@ Most user‑facing content lives in HTML and the section‑specific JS files. Co
 	- Skills marquee loop: `assets/js/skills-section.js`
 	- Social dock magnify and scroll progress: `assets/js/main.js`
 	- Mouse follower text and parallax bindings: `assets/js/mousefollower.js`
-
-### Contact form (EmailJS + email validation)
 
 The contact form is wired to:
 
@@ -96,7 +82,9 @@ Notes:
 - Client‑side keys are inherently public at runtime. Protect them with origin restrictions, quotas/rate limits, and monitoring in provider dashboards.
 - The contact form may not work when loading the site via `file://` due to browser restrictions on `fetch`. Use a simple local server (e.g., VS Code Live Server).
 
-## Project structure
+##
+
+### Project structure
 
 ```
 index.html
@@ -113,6 +101,8 @@ Key entry points:
 - Styles: `assets/css/main.css` + section files (hero/about/skills/projects/contact)
 - Scripts: `assets/js/*.js` (see Configuration)
 
-## Help and support
+##
+
+### Help and support
 
 - Have a question or found a bug? Open an issue on the repository.
